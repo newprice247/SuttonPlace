@@ -1,0 +1,26 @@
+//=================================================
+// 404
+//=================================================
+
+.error404 {
+    #page-content {
+        .content {
+            text-align: center;
+
+            .text {
+                max-width: 780px;
+                margin: auto;
+            }
+
+            .form {
+                max-width: 780px;
+                margin: auto;
+                padding-top: $space_lg;
+            }
+
+            .button {
+                padding-top: $space_lg;
+            }
+        }
+    }
+}

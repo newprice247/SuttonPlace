@@ -1,0 +1,76 @@
+//=================================================
+// Fonts
+//=================================================
+
+// Cardo-Regular
+@font-face {
+    font-family: 'Cardo-Regular';
+    src: url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.eot');
+    src: url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.woff2') format('woff2'),
+         url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.woff') format('woff'),
+         url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.ttf') format('truetype'),
+         url('../fonts/Cardo/Cardo-Regular/Cardo-Regular.svg#Cardo-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// Cardo-Bold
+@font-face {
+    font-family: 'Cardo-Bold';
+    src: url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.eot');
+    src: url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.woff2') format('woff2'),
+         url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.woff') format('woff'),
+         url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.ttf') format('truetype'),
+         url('../fonts/Cardo/Cardo-Bold/Cardo-Bold.svg#Cardo-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+// DMSans-Regular
+@font-face {
+    font-family: 'DMSans-Regular';
+    src: url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.eot');
+    src: url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.woff2') format('woff2'),
+         url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.woff') format('woff'),
+         url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.ttf') format('truetype'),
+         url('../fonts/DMSans/DMSans-Regular/DMSans-Regular.svg#DMSans-Regular') format('svg');
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+// DMSans-Bold
+@font-face {
+    font-family: 'DMSans-Bold';
+    src: url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.eot');
+    src: url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.woff2') format('woff2'),
+         url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.woff') format('woff'),
+         url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.ttf') format('truetype'),
+         url('../fonts/DMSans/DMSans-Bold/DMSans-Bold.svg#DMSans-Bold') format('svg');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/*=============================
+// Font size
+=============================*/
+.font-size {
+    &-sm {
+        font-size: $f_size_sm;
+    }
+
+    &-df {
+        font-size: $f_size_df;
+    }
+
+    &-lg {
+        font-size: $f_size_lg;
+    }
+}

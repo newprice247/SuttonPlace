@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "title": "5 Benefits of Going to a Hair Salon",
+        "link": "/news-single-post",
+        "imgTitle": "Women beauty presents",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Women beauty presents",
+        "categoryTitle": "Beauty",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "2",
+        "title": "Which Makeup Should I Choose?",
+        "link": "/news-single-post",
+        "imgTitle": "Red lipstick habits",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Women beauty presents",
+        "categoryTitle": "Makeup",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    },
+    {
+        "id": "3",
+        "title": "Best Cosmetics for Your Body and Soul",
+        "link": "/news-single-post",
+        "imgTitle": "Body cream & shampoo",
+        "imgLink": "assets/img/placeholder/507x507.jpg",
+        "imgAlt": "Women beauty presents",
+        "categoryTitle": "Cosmetic",
+        "categoryLink": "/news",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+    }
+]

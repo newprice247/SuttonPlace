@@ -1,0 +1,269 @@
+//=================================================
+// Background
+//=================================================
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-dark {
+    h1, h2, h3, h4, h5, h6, a, p {
+        color: $body_text_tertiary_color;
+    }
+}
+
+.bg {
+    &-gray {
+        background-color: $gray;
+    }
+
+    &-gray-light {
+        background-color: $gray-light;
+    }
+
+    &-gray-dark {
+        background-color: $gray-dark;
+    }
+
+    &-white {
+        background-color: $white;
+    }
+
+    &-blue {
+        background-color: $blue;
+
+        &-light {
+            background-color: #6889c9;
+        }
+    }
+
+    &-indigo {
+        background-color: $indigo;
+
+        &-light {
+            background-color: #a36bff;
+        }
+    }
+
+    &-purple {
+        background-color: $purple;
+
+        &-light {
+            background-color: #9183ab;
+        }
+    }
+
+    &-pink {
+        background-color: $pink;
+
+        &-light {
+            background-color: #efe6e8;
+        }
+    }
+
+    &-red {
+        background-color: $red;
+
+        &-light {
+            background-color: #b7636c;
+        }
+    }
+
+    &-orange {
+        background-color: $orange;
+
+        &-light {
+            background-color: #f5e2a8;
+        }
+    }
+
+    &-yellow {
+        background-color: $yellow;
+
+        &-light {
+            background-color: #f5e2a8;
+        }
+    }
+
+    &-green {
+        background-color: $green;
+
+        &-light {
+            background-color: #a2cbac;
+        }
+    }
+
+    &-teal {
+        background-color: $teal;
+
+        &-light {
+            background-color: #b1cac7;
+        }
+    }
+
+    &-cyan {
+        background-color: $cyan;
+
+        &-light {
+            background-color: #84b9c1;
+        }
+    }
+}
+
+/*=============================
+// Background full width
+=============================*/
+// Gray
+.bg-gray-full-width {
+    position: relative;
+    background: $gray;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(50vw - 50%);
+        left: calc(-50vw + 50%);
+        background: $gray;
+
+        @media #{$media_lg} {
+            width: $wrapper_p_l_sm;
+            left: -$wrapper_p_l_sm;
+        }
+    }
+
+    &:after {
+        left: auto;
+        right: calc(-50vw + 50%);
+
+        @media #{$media_lg} {
+            right: -$wrapper_p_r_sm;
+        }
+    }
+}
+
+// Gray light
+.bg-gray-light-full-width {
+    position: relative;
+    background: $gray-light;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(50vw - 50%);
+        left: calc(-50vw + 50%);
+        background: $gray-light;
+
+        @media #{$media_lg} {
+            width: $wrapper_p_l_sm;
+            left: -$wrapper_p_l_sm;
+        }
+    }
+
+    &:after {
+        left: auto;
+        right: calc(-50vw + 50%);
+
+        @media #{$media_lg} {
+            right: -$wrapper_p_r_sm;
+        }
+    }
+}
+
+// Gray dark
+.bg-gray-dark-full-width {
+    position: relative;
+    background: $gray-dark;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(50vw - 50%);
+        left: calc(-50vw + 50%);
+        background: $gray-dark;
+
+        @media #{$media_lg} {
+            width: $wrapper_p_l_sm;
+            left: -$wrapper_p_l_sm;
+        }
+    }
+
+    &:after {
+        left: auto;
+        right: calc(-50vw + 50%);
+
+        @media #{$media_lg} {
+            right: -$wrapper_p_r_sm;
+        }
+    }
+}
+
+// Light
+.bg-light-full-width {
+    position: relative;
+    background: $light;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(50vw - 50%);
+        left: calc(-50vw + 50%);
+        background: $light;
+
+        @media #{$media_lg} {
+            width: $wrapper_p_l_sm;
+            left: -$wrapper_p_l_sm;
+        }
+    }
+
+    &:after {
+        left: auto;
+        right: calc(-50vw + 50%);
+
+        @media #{$media_lg} {
+            right: -$wrapper_p_r_sm;
+        }
+    }
+}
+
+// Dark
+.bg-dark-full-width {
+    position: relative;
+    background: $dark;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(50vw - 50%);
+        left: calc(-50vw + 50%);
+        background: $dark;
+
+        @media #{$media_lg} {
+            width: $wrapper_p_l_sm;
+            left: -$wrapper_p_l_sm;
+        }
+    }
+
+    &:after {
+        left: auto;
+        right: calc(-50vw + 50%);
+
+        @media #{$media_lg} {
+            right: -$wrapper_p_r_sm;
+        }
+    }
+}

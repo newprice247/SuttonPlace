@@ -1,0 +1,124 @@
+//=================================================
+// Reviews
+//=================================================
+
+.reviews-items {
+	.reviews-item {
+		width: 100%;
+	}
+}
+
+/*=============================
+// Reviews slider
+=============================*/
+.adv-slider-reviews {
+	position: relative;
+	padding-left: 3.947rem;
+	padding-top: 2.211rem;
+
+	@media #{$media_sm} {
+		padding-left: 0;
+	}
+
+	.adv-slider-reviews-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 140px;
+	}
+
+	.adv-swiper-container {
+		&.reviews-text {
+			.reviews-text-items {
+				.reviews-text-item {
+					.reviews-text-item-content {
+						> * {
+							&:before, &:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.thumbs {
+		margin-top: $space_lg - $h2_font_mb;
+		max-width: 500px;
+
+		@media #{$media_sm} {
+			flex-direction: column !important;
+		}
+
+		.adv-swiper-container {
+			&.reviews-thumbs {
+				width: 11.053rem;
+				height: 3.158rem;
+				margin: 0;
+				margin-right: 0.579rem;
+
+				@media #{$media_sm} {
+					margin-right: -1.053rem;
+				}
+
+				.reviews-thumbs-items {
+					.reviews-thumbs-item {
+						@extend .d-flex;
+						@extend .align-items-center;
+						@extend .transition-all;
+						width: 2.632rem !important;
+						margin-right: 1.053rem !important;
+
+						img {
+							filter: grayscale(100%);
+							-webkit-filter: grayscale(100%);
+							width: 2.632rem !important;
+							height: 2.632rem !important;
+							border-radius: 50%;
+							cursor: pointer;
+							@extend .transition-all;
+							max-width: inherit !important;
+						}
+
+						&.adv-swiper-slide-thumb-active {
+							width: 3.158rem !important;
+
+							img {
+								width: 3.158rem !important;
+								height: 3.158rem !important;
+							}
+						}
+					}
+
+					&.original {
+						.reviews-thumbs-item {
+							img {
+								filter: none;
+								-webkit-filter: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.reviews-results {
+			@extend .style-default;
+
+			@media #{$media_sm} {
+				margin-top: 1.053rem;
+				text-align: center;
+			}
+
+			.reviews-name {
+				font-family: $font_secondary_bold;
+			}
+
+			.reviews-positions {
+				margin-top: -0.895rem;
+				font-size: $f_size_df;
+			}
+		}
+	}
+}

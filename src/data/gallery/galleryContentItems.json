@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Face & Body | Image 1",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/780x500.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Hair Treatments",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/780x500.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Hands & Feets",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/780x500.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Haircuts for Men",
+        "link": "/services-inside",
+        "imgSrc": "assets/img/placeholder/780x500.jpg"
+    }
+]

@@ -1,0 +1,58 @@
+//=================================================
+// Contacts
+//=================================================
+
+.contacts {
+	.contacts-items {
+		.contacts-item {
+			padding-bottom: $space_lg;
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			.contacts-item-description {
+				a {
+					color: $body_text_primary_color;
+
+					&:hover {
+						color: $body_links_color;
+					}
+				}
+			}
+
+			.contacts-item-title {
+				padding-top: $space_xs;
+
+				&:first-child {
+					padding-top: 0;
+				}
+
+				> * {
+					font-family: $font_secondary_bold;
+				}
+			}
+		}
+	}
+}
+
+.contact-form-shortcode {
+	[class*='-form'] {
+		@media #{$media_sm} {
+			.input-group {
+				.gutter-width {
+					width: 100%;
+
+					&:first-child {
+						padding-right: 0;
+						margin-bottom: $space_lg;
+					}
+
+					&:last-child {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

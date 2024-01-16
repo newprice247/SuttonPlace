@@ -1,0 +1,36 @@
+//=================================================
+// Colors
+//=================================================
+
+.text-white {
+	h1, h2, h3, h4, h5, h6 {
+		color: $white !important;
+	}
+
+	.btn {
+		&.btn-link {
+			color: $white;
+		}
+	}
+
+	.blockquote, blockquote {
+		color: $white !important;
+		border-color: $white !important;
+	}
+}
+
+[class*='-block-cover'] {
+	p {
+		&:not(.has-text-color) {
+			color: $white;
+
+			a {
+				color: $white;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}

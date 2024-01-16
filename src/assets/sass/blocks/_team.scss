@@ -1,0 +1,52 @@
+//=================================================
+// Team
+//=================================================
+
+.team-member {
+	@extend .style-default;
+
+	.img {
+		@extend .img-gray;
+
+		&.object-fit {
+			&:before {
+				padding-top: 118.5%;
+			}
+
+			&.original {
+				filter: none;
+				-webkit-filter: none;
+			}
+		}
+	}
+
+	.team-member-content {
+		padding-top: $space_xs;
+
+		.team-member-position {
+			margin-bottom: $space_xs - 0.465rem;
+		}
+
+		.team-member-t-head {
+			color: $body_headline_color;
+		}
+	}
+
+	.team-member-nav-items {
+		padding-top: $space_xs;
+
+		ul {
+			li {
+				margin-right: 1.368rem;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					font-size: 0.947rem;
+				}
+			}
+		}
+	}
+}
