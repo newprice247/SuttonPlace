@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff5d27de.css",
-    "main.js": "/static/js/main.c26c8dd4.js",
+    "main.css": "/static/css/main.fd0c36dc.css",
+    "main.js": "/static/js/main.f1a7a371.js",
     "static/media/Cardo-Bold.svg": "/static/media/Cardo-Bold.886e86071c0fb808ea0f.svg",
     "static/media/Cardo-Regular.svg": "/static/media/Cardo-Regular.2271a38529fe60e9d7cd.svg",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.48ea9f1ebdcfe18a5912.svg",
@@ -40,11 +40,11 @@
     "static/media/icon-arrow-down.svg": "/static/media/icon-arrow-down.c4e31bd5260796c3334d.svg",
     "index.html": "/index.html",
     "static/media/loader.svg": "/static/media/loader.74b9486b37a7a75d5e82.svg",
-    "main.ff5d27de.css.map": "/static/css/main.ff5d27de.css.map",
-    "main.c26c8dd4.js.map": "/static/js/main.c26c8dd4.js.map"
+    "main.fd0c36dc.css.map": "/static/css/main.fd0c36dc.css.map",
+    "main.f1a7a371.js.map": "/static/js/main.f1a7a371.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff5d27de.css",
-    "static/js/main.c26c8dd4.js"
+    "static/css/main.fd0c36dc.css",
+    "static/js/main.f1a7a371.js"
   ]
 }
