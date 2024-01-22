@@ -36,6 +36,7 @@
         "swiper": "^5.4.2"
     },
     "scripts": {
+        "dev": "yarn build && react-scripts start",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -60,5 +61,6 @@
     },
     "devDependencies": {
         "node-sass": "^9.0.0"
-    }
+    },
+    "homepage": "https://suttonplacehairsalon.com/"
 }
