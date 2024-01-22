@@ -6,11 +6,11 @@ import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 
 import PageTitleHome from '../blocks/page-title/PageTitleHome';
-import ContactsUs from "../blocks/contacts/ContactUs";
+// import ContactsUs from "../blocks/contacts/ContactUs";
 import ServicesHome from '../blocks/services/ServicesHome';
-import AboutsUs from '../blocks/about/AboutUs';
-import News from '../blocks/news/News';
-import Newsletter from '../blocks/newsletter/Newsletter';
+// import AboutsUs from '../blocks/about/AboutUs';
+// import News from '../blocks/news/News';
+// import Newsletter from '../blocks/newsletter/Newsletter';
 
 
 const Home = () => {
