@@ -11,7 +11,7 @@ import Gallery from './pages/Gallery';
 import SearchResults from './pages/SearchResults';
 import Services from './pages/Services';
 import ServicesInside from './pages/ServicesInside';
-import page404 from './pages/404';
+import Page404 from './pages/404';
 import UserInterface from './pages/UserInterface';
 
 import './assets/sass/style.scss';
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
-        errorElement: <page404 />,
+        errorElement: <Page404 />,
         children: [
             {
                 path: '/',
