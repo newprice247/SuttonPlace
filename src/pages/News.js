@@ -17,7 +17,7 @@ const News = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>News | Mykery - Beauty Salon React JS Template</title>
+                <title>News | Sutton Place Hair Salon</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

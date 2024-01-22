@@ -15,7 +15,7 @@ const ServicesInside = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Service inside | Mykery - Beauty Salon React JS Template</title>
+                <title>Service inside | Sutton Place Hair Salon</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

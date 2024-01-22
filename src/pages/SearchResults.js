@@ -15,7 +15,7 @@ const SearchResults = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Search results | Mykery - Beauty Salon React JS Template</title>
+                <title>Search results | Sutton Place Hair Salon</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

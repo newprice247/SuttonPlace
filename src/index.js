@@ -16,7 +16,6 @@ import UserInterface from './pages/UserInterface';
 
 import './assets/sass/style.scss';
 import App from './App';
-// import * as serviceWorker from './serviceWorker';
 
 const router = createBrowserRouter([
     {
@@ -68,8 +67,6 @@ const router = createBrowserRouter([
     }
 ])
 
-
-// ReactDOM.render( <App />, document.getElementById( 'root' ) );
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <RouterProvider router={router}>
