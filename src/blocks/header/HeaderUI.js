@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderLogo from '../../blocks/logo/HeaderLogo';
 
-const HeaderUI = ( { logoColor } ) => {
+const HeaderUI = () => {
     return (
         <header id="header" className="site-header">
             <div className="wrapper">
@@ -9,7 +9,7 @@ const HeaderUI = ( { logoColor } ) => {
                     <div className="header-left align-self-center"></div>
 
                     <div className="header-center align-self-center">
-                        <HeaderLogo logoColor={ logoColor } />
+                        <HeaderLogo />
                     </div>
 
                     <div className="header-right d-flex justify-content-end"></div>

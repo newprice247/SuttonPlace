@@ -32,7 +32,7 @@ class MenuModal extends Component {
         return (
             <Fragment>
                 <div className="menu-toggle">
-                    <button onClick={ this.open.bind( this ) } type="button" className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto" data-toggle="modal" data-target="#menu-modal">menu
+                    <button onClick={ this.open.bind( this ) } type="button" className="btn btn-lg btn-link min-w-auto btn btn-lg  btn-link min-w-auto border-top-0 border-right-0 border-left-0 border-bottom-3 text-uppercase border-white p-2" data-toggle="modal" data-target="#menu-modal">menu
                     </button>
                 </div>
 
@@ -65,7 +65,7 @@ class MenuModal extends Component {
 
                                     <div className="header-right d-flex justify-content-end">
                                         <div className="d-flex align-items-center">
-                                            <SearchModal />
+                                            {/* <SearchModal /> */}
 
                                             <div className="menu-close-toggle">
                                                 <button onClick={ this.close } type="button" className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto" data-dismiss="modal" aria-label="Close">Close menu
@@ -73,7 +73,7 @@ class MenuModal extends Component {
                                             </div>
                                         </div>
 
-                                        <Actions />
+                                        {/* <Actions /> */}
                                     </div>
                                 </div>
                             </div>
@@ -82,16 +82,16 @@ class MenuModal extends Component {
                                 <div className="animated fadeinright w-100">
                                     <ModalMenuPrimary />
 
-                                    <ModalMenuSecondary />
+                                    {/* <ModalMenuSecondary /> */}
 
                                     <div className="modal-text">
-                                        <p>© 2020 Beauty Salon JS Template by Adveits</p>
+                                        <p>© 2024 Nathaniel Price</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="modal-footer">
-                                <ModalMenuLanguages />
+                                {/* <ModalMenuLanguages /> */}
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import SearchModal from '../../components/modal/SearchModal';
 import MenuModal from '../../components/modal/MenuModal';
 import Actions from "../actions/Actions";
 
-const Header = ( { logoColor } ) => {
+const Header = () => {
     return (
         <header id="header" className="site-header">
             <div className="wrapper">
@@ -13,24 +13,29 @@ const Header = ( { logoColor } ) => {
                         <div className="links">
                             <div className="links-items">
                                 <div className="links-item">
-                                    <a href={ process.env.PUBLIC_URL + "/" } className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto">home</a>
+                                    <a 
+                                    href={ process.env.PUBLIC_URL + "/" } 
+                                    className="btn btn-lg  btn-link min-w-auto border-top-0 border-right-0 border-left-0 border-bottom-3 text-uppercase border-white p-2"
+                                    >
+                                        Home
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="header-center align-self-center">
-                        <HeaderLogo logoColor={ logoColor } />
+                        <HeaderLogo />
                     </div>
 
                     <div className="header-right d-flex justify-content-end">
                         <div className="d-flex align-items-center">
-                            <SearchModal />
+                            {/* <SearchModal /> */}
 
                             <MenuModal />
                         </div>
 
-                        <Actions />
+                        {/* <Actions /> */}
                     </div>
                 </div>
             </div>

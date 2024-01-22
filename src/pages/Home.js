@@ -42,25 +42,25 @@ const Home = () => {
                     <div className="clearfix">
                         <PageTitleHome />
 
-                        <ContactsUs />
+                        {/* <ContactsUs /> */}
 
                         <ServicesHome />
 
-                        <AboutsUs />
+                        {/* <AboutsUs /> */}
 
-                        <div id="img" className="block spacer p-top-xl">
+                        {/* <div id="img" className="block spacer p-top-xl">
                             <div className="img-no-wrap-1 img-gray">
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/placeholder/1920x700.jpg" alt="Beauty Salon" />
+                                        <img src="assets/img/bg/blackTools.jpg" alt="Beauty Salon" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
-                        <News />
+                        {/* <News />
 
-                        <Newsletter />
+                        <Newsletter /> */}
                     </div>
                 </div>
             </main>
