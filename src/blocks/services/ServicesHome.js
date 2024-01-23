@@ -77,7 +77,7 @@ class ServicesHome extends Component {
 
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/bg/waitingRoom.jpg" alt="About" />
+                                        <img src="assets/img/gallery/suttonWorking.jpg" alt="About" />
                                     </div>
                                 </div>
 
