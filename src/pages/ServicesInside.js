@@ -15,7 +15,7 @@ const ServicesInside = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>Service inside | Sutton Place Hair Salon</title>
+                <title>Services | Sutton Place Hair Salon</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,12 +35,12 @@ const ServicesInside = () => {
                 <PageTitleServicesInside />
 
 
-                <div id="page-content" className="spacer p-top-xl">
+                <div id="page-content" className="spacer p-top-lg">
                     <div className="wrapper">
                         <div className="content">
                             <div id="single">
                                 <div id="single-content">
-                                    <div id="img" className="block">
+                                    {/* <div id="img" className="block">
                                         <div className="img-no-wrap-1">
                                             <div className="img object-fit">
                                                 <div className="object-fit-cover">
@@ -55,9 +55,9 @@ const ServicesInside = () => {
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
                                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
                                         </div>
-                                    </div>
+                                    </div> */}
 
-                                    <div id="price-list" className="block spacer p-top-xl">
+                                    <div id="price-list" className="block spacer p-top-lg">
                                         <div className="title">
                                             <h2 className="hr">Price list</h2>
                                         </div>

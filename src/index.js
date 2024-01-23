@@ -9,7 +9,7 @@ import News from './pages/News';
 import NewsSinglePost from './pages/NewsSinglePost';
 import Gallery from './pages/Gallery';
 import SearchResults from './pages/SearchResults';
-import Services from './pages/Services';
+// import Services from './pages/Services';
 import ServicesInside from './pages/ServicesInside';
 import Page404 from './pages/404';
 import UserInterface from './pages/UserInterface';
@@ -53,12 +53,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <Services />
-            },
-            {
-                path: '/services-inside',
                 element: <ServicesInside />
             },
+            // {
+            //     path: '/services-inside',
+            //     element: <ServicesInside />
+            // },
             {
                 path: '/user-interface',
                 element: <UserInterface />
