@@ -7,7 +7,7 @@ const Contacts = () => {
                 <div className="contacts-item">
                     <div className="contacts-item-description">
                         <p>
-                            <a href="mailto:company@domain.com">company@domain.com</a>
+                            <a href={`mailto:${process.env.REACT_APP_EMAIL}`}>{process.env.REACT_APP_EMAIL}</a>
                         </p>
                     </div>
 
@@ -18,7 +18,7 @@ const Contacts = () => {
 
                 <div className="contacts-item">
                     <div className="contacts-item-description">
-                        <p>36 M St, New York, 152, USA</p>
+                        <p>{process.env.REACT_APP_ADDRESS}</p>
                     </div>
 
                     <div className="contacts-item-title">
@@ -29,7 +29,7 @@ const Contacts = () => {
                 <div className="contacts-item">
                     <div className="contacts-item-description">
                         <p>
-                            <a href="tel:005053255350539">0050 (5325) 535-0539</a>
+                            <a href={`tel:${process.env.REACT_APP_PHONE_HREF}`}>{process.env.REACT_APP_PHONE_PRETTY}</a>
                         </p>
                     </div>
 

@@ -6,16 +6,15 @@ import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 
 import PageTitleHome from '../blocks/page-title/PageTitleHome';
-// import ContactsUs from "../blocks/contacts/ContactUs";
+import GoogleMaps from '../blocks/google-maps/GoogleMaps';
 import ServicesHome from '../blocks/services/ServicesHome';
-// import AboutsUs from '../blocks/about/AboutUs';
-// import News from '../blocks/news/News';
-// import Newsletter from '../blocks/newsletter/Newsletter';
+import ContactsInside from '../blocks/contacts/Contacts';
+
 
 
 const Home = () => {
-    document.body.classList.add( 'home' );
-    document.body.classList.add( 'header-absolute-true' );
+    document.body.classList.add('home');
+    document.body.classList.add('header-absolute-true');
 
     return (
         <Fragment>
@@ -45,6 +44,14 @@ const Home = () => {
                         {/* <ContactsUs /> */}
 
                         <ServicesHome />
+                        <div
+                            style={{ height: '70vh', width: '70%', margin: '2em auto' }}
+                        >
+                            <GoogleMaps />
+                        </div>
+                        <div className="spacer p-top-lg p-bottom-lg text-center">
+                            <ContactsInside />
+                        </div>
 
                         {/* <AboutsUs /> */}
 

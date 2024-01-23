@@ -1,54 +1,21 @@
+
 import React from 'react';
-import scriptLoader from 'react-async-script-loader';
-import GoogleMapsStyle from '../../data/google-maps/googleMapsStyle';
 
-class Maps extends React.Component {
-    constructor( props ) {
-        super( props );
-        this.mapRef = React.createRef();
-        this.map = null;
-    }
+const SimpleMarkerMap = () => {
 
-    componentWillReceiveProps( { isScriptLoaded, isScriptLoadSucceed } ) {
-        if ( isScriptLoaded && !this.props.isScriptLoaded ) {
-            // 189 Bedford Ave, Brooklyn, NY 11211, United States
-            var address_latlng = new window.google.maps.LatLng( 40.717480, -73.957730 );
-            // load finished
-            if ( isScriptLoadSucceed ) {
-                this.map = new window.google.maps.Map( this.mapRef.current, {
-                    center: address_latlng,
-                    zoom: 18,
-                    zoomControl: false,
-                    mapTypeControl: false,
-                    scaleControl: false,
-                    streetViewControl: false,
-                    rotateControl: false,
-                    fullscreenControl: false,
-                    styles: GoogleMapsStyle
-                } );
+return (
+    <div
+    style={{ height: '70vh' }}
+    >
+     <iframe
+      src={`https://storage.googleapis.com/maps-solutions-${process.env.REACT_APP_MAPS_API_KEY}/locator-plus/3beg/locator-plus.html`}
+      className='h-100 w-100 border-0'
+      loading="lazy"
+      title="Locator Plus Map"
+    ></iframe>
+    </div>
+    
+);
+};
 
-                var icon = {
-                    url: '../../assets/img/demo/16_img.png',
-                    size: new window.google.maps.Size( 112, 118 )
-                };
-
-                this.map.setCenter( address_latlng );
-
-                new window.google.maps.Marker( {
-                    position: address_latlng,
-                    map: this.map,
-                    icon: icon
-                } );
-
-            } else this.props.onError();
-        }
-    }
-
-    render() {
-        return (
-            <div id="google-maps" ref={ this.mapRef }></div>
-        );
-    }
-}
-
-export default scriptLoader( ['https://maps.googleapis.com/maps/api/js?key=AIzaSyAtFb35xhesKqL6CU3GSJx7sTssDd33pjs'] )( Maps );
+export default SimpleMarkerMap;
