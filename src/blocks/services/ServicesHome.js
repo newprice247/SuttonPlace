@@ -36,64 +36,64 @@ class ServicesHome extends Component {
                 <div className="adv-slider-services">
                     <div className="adv-swiper-container">
                         <div className="adv-swiper-wrapper services-items clearfix">
-                            <a title="Face & Body" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services-inside" }>
+                            <a title="Face & Body" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services" }>
                                 <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Face & Body</h3>
+                                    <h3 className="services-item-t-head">Services</h3>
 
                                     <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
                                 </div>
 
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/placeholder/780x500.jpg" alt="Face & Body" />
+                                        <img src="assets/img/bg/goldTools.jpg" alt="Services" />
                                     </div>
                                 </div>
 
                                 <div className="img-bg-color"></div>
                             </a>
 
-                            <a title="Hair Treatments" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services-inside" }>
+                            <a title="Hair Treatments" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/gallery" }>
                                 <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Hair Treatments</h3>
+                                    <h3 className="services-item-t-head">Gallery</h3>
 
                                     <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
                                 </div>
 
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/placeholder/780x500.jpg" alt="Hair Treatments" />
+                                        <img src="assets/img/bg/chair.jpg" alt="Hair Treatments" />
                                     </div>
                                 </div>
 
                                 <div className="img-bg-color"></div>
                             </a>
 
-                            <a title="Hands & Feets" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services-inside" }>
+                            <a title="Hands & Feets" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/about" }>
                                 <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Hands & Feets</h3>
+                                    <h3 className="services-item-t-head">About</h3>
 
                                     <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
                                 </div>
 
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/placeholder/780x500.jpg" alt="Hands & Feets" />
+                                        <img src="assets/img/bg/waitingRoom.jpg" alt="About" />
                                     </div>
                                 </div>
 
                                 <div className="img-bg-color"></div>
                             </a>
 
-                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services-inside" }>
+                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/contact" }>
                                 <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Haircuts for Men</h3>
+                                    <h3 className="services-item-t-head">Contact</h3>
 
                                     <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
                                 </div>
 
                                 <div className="img object-fit">
                                     <div className="object-fit-cover">
-                                        <img src="assets/img/placeholder/780x500.jpg" alt="Haircuts for Men" />
+                                        <img src="assets/img/bg/phone.jpg" alt="Haircuts for Men" />
                                     </div>
                                 </div>
 
