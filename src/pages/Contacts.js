@@ -40,7 +40,7 @@ const Contacts = () => {
                     <div className="wrapper">
                         <div className="content">
                             <div className="clearfix">
-                                <GoogleMaps />
+                                
 
                                 <div className="spacer p-top-xl">
                                     <div className="title">
@@ -51,7 +51,8 @@ const Contacts = () => {
                                         <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                                             <ContactsInside />
                                         </div>
-
+<GoogleMaps />
+ 
                                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                             <div className="contact-form-shortcode">
                                                 <ContactForm />
