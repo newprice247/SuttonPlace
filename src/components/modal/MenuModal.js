@@ -53,7 +53,7 @@ class MenuModal extends Component {
                                         <div className="links">
                                             <div className="links-items">
                                                 <div className="links-item">
-                                                    <a href={ process.env.PUBLIC_URL + "/" } className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto">home</a>
+                                                    <a href={ process.env.PUBLIC_URL + "/" } className="btn btn-lg  btn-link min-w-auto border-top-0 border-right-0 border-left-0 border-bottom-3 text-uppercase border-white p-2">home</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@ class MenuModal extends Component {
                                             {/* <SearchModal /> */}
 
                                             <div className="menu-close-toggle">
-                                                <button onClick={ this.close } type="button" className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto" data-dismiss="modal" aria-label="Close">Close menu
+                                                <button onClick={ this.close } type="button" className="btn btn-lg  btn-link min-w-auto border-top-0 border-right-0 border-left-0 border-bottom-3 text-uppercase border-white p-2" data-dismiss="modal" aria-label="Close">Close menu
                                                 </button>
                                             </div>
                                         </div>
@@ -85,7 +85,7 @@ class MenuModal extends Component {
                                     {/* <ModalMenuSecondary /> */}
 
                                     <div className="modal-text">
-                                        <p>© 2024 Nathaniel Price</p>
+                                        <p>© 2024 Sutton Place Hair Salon</p>
                                     </div>
                                 </div>
                             </div>
