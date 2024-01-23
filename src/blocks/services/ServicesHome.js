@@ -84,7 +84,7 @@ class ServicesHome extends Component {
                                 <div className="img-bg-color"></div>
                             </a>
 
-                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/contact" }>
+                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/contacts" }>
                                 <div className="services-item-content">
                                     <h3 className="services-item-t-head">Contact</h3>
 
