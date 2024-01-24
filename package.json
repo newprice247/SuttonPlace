@@ -4,6 +4,7 @@
     "description": "Sutton Place Hair Salon Website",
     "author": "Nathaniel Price, Template created by Adveits",
     "dependencies": {
+        "@formspree/react": "^2.5.1",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",

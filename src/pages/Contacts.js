@@ -6,7 +6,8 @@ import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 
 import PageTitleContacts from '../blocks/page-title/PageTitleContacts';
-import ContactForm from '../components/form/ContactForm';
+// import ContactForm from '../components/form/ContactForm';
+import FormspreeForm from '../blocks/contacts/FormspreeForm';
 
 import GoogleMaps from '../blocks/google-maps/GoogleMaps';
 import ContactsInside from '../blocks/contacts/Contacts';
@@ -36,30 +37,31 @@ const Contacts = () => {
 
             <main id="main" className="site-main">
                 <PageTitleContacts />
-                <div id="page-content" className="spacer p-top-xl">
+                <div id="page-content" className="spacer p-top-lg">
                     <div className="wrapper">
                         <div className="content">
                             <div className="clearfix">
                                 
 
-                                <div className="spacer p-top-xl">
+                                <div className="spacer p-top-lg p-bottom-lg">
                                     <div className="title">
-                                        <h2>Let’s talk or book now</h2>
+                                        <h2>Let's get in touch</h2>
                                     </div>
 
                                     <div className="row gutter-width-sm with-pb-xl spacer p-top-lg">
-                                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                        <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-5">
                                             <ContactsInside />
                                         </div>
-<GoogleMaps />
+
  
                                         <div className="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                                             <div className="contact-form-shortcode">
-                                                <ContactForm />
+                                                <FormspreeForm />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <GoogleMaps />
                             </div>
                         </div>
                     </div>

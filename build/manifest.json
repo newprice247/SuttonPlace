@@ -3,17 +3,17 @@
     "name": "Sutton Place Hair Salon",
     "icons": [
         {
-            "src": "assets/img/favicon/favicon-16x16.ico",
+            "src": "assets/img/logo/dark-logo.png",
             "sizes": "16x16",
             "type": "image/x-icon"
         },
         {
-            "src": "assets/img/logo/logo-dark.svg",
+            "src": "assets/img/logo/dark-logo.png",
             "type": "image/svg",
             "sizes": "87x87"
         },
         {
-            "src": "assets/img/logo/logo-light.svg",
+            "src": "assets/img/logo/dark-logo.png",
             "type": "image/svg",
             "sizes": "87x87"
         }
