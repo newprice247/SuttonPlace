@@ -4,7 +4,7 @@ const PageTitleAbout = () => {
     return (
         <div id="page-title">
             <div className="wrapper text-center">
-                <h1 className="large">About us</h1>
+                <h1 className="large">About Sutton</h1>
             </div>
         </div>
     );

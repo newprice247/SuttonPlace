@@ -7,7 +7,7 @@ const AboutsUs = () => {
                 <div className="row gutter-width-sm">
                     <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                         <div className="title">
-                            <h2>Sutton Kellam has been in the hair industry for for 2 years. Let him make you feel beautiful</h2>
+                            <h2>Sutton Kellam has been in the hair industry for over 2 years. Let him make you feel beautiful</h2>
                         </div>
                     </div>
                 </div>

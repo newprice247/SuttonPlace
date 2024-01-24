@@ -9,9 +9,7 @@ import PageTitleAbout from '../blocks/page-title/PageTitleAbout';
 import AboutReviews from '../blocks/about/AboutReviews';
 import AboutImg from '../blocks/about/AboutImg';
 import AboutsUs from '../blocks/about/AboutUs';
-import AboutOurTeam from '../blocks/about/AboutOurTeam';
 import AboutServices from '../blocks/about/AboutServices';
-import AboutClients from '../blocks/about/AboutClients';
 
 const About = () => {
     document.body.classList.add( 'page' );
@@ -20,7 +18,7 @@ const About = () => {
         <Fragment>
             <MetaTags>
                 <meta charSet="UTF-8" />
-                <title>About us | Sutton Place Hair Salon</title>
+                <title>About | Sutton Place Hair Salon</title>
 
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,13 +45,9 @@ const About = () => {
 
                                 <AboutsUs />
 
-                                <AboutOurTeam />
-
                                 <AboutReviews />
 
                                 <AboutServices />
-
-                                <AboutClients />
                             </div>
                         </div>
                     </div>
