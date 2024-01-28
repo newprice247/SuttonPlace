@@ -22,7 +22,7 @@
         "prop-types": "^15.7.2",
         "react": "^18.2.0",
         "react-async-script-loader": "^0.3.0",
-        "react-bootstrap": "https://github.com/motiejus1/react-bootstrap-contentclass.git",
+        "react-bootstrap": "^2.10.0",
         "react-dom": "^18.2.0",
         "react-isotope": "^1.0.7",
         "react-masonry-layout": "^0.4.0",

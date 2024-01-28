@@ -64,7 +64,7 @@ const ServicesInside = () => {
 
                                         <div className="price-list">
                                             <div className="price-list-items">
-                                                <div className="price-list-item">
+                                                {/* <div className="price-list-item">
                                                     <div className="price-list-item-title">
                                                         <h3>Special in-salon treatments</h3>
                                                     </div>
@@ -80,7 +80,7 @@ const ServicesInside = () => {
                                                             <span className="list-group-price">From 35 $</span>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
 
                                                 <div className="price-list-item">
                                                     <div className="price-list-item-title">
