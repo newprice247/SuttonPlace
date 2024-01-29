@@ -64,23 +64,22 @@ const ServicesInside = () => {
 
                                         <div className="price-list">
                                             <div className="price-list-items">
-                                                {/* <div className="price-list-item">
+
+                                            <div className="price-list-item">
                                                     <div className="price-list-item-title">
-                                                        <h3>Special in-salon treatments</h3>
+                                                        <h3></h3>
                                                     </div>
 
                                                     <ul className="price-list-item-list-group list-group">
-                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Unique hair restoring treatment with Lorem Ipsum</span>
-                                                            <span className="list-group-price">From 35 $</span>
-                                                        </li>
-
-                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Scalp renewing treatment with Lorem Ipsum</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                        
+                                                    <li className="list-group-item d-flex justify-content-between align-items-center">
+                                                            <span 
+                                                            className="list-group-title"
+                                                            ><h4> - Consultation</h4></span>
+                                                            <span className="list-group-price">Fee waived if service is booked, OR 25 $</span>
                                                         </li>
                                                     </ul>
-                                                </div> */}
+                                                </div>
 
                                                 <div className="price-list-item">
                                                     <div className="price-list-item-title">
@@ -88,34 +87,29 @@ const ServicesInside = () => {
                                                     </div>
 
                                                     <ul className="price-list-item-list-group list-group">
+                                                        <h4
+                                                            className="spacer p-top-xs"
+                                                        > - Women</h4>
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
                                                             <span className="list-group-title">Haircut</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-price">40 $</span>
                                                         </li>
 
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Bangs</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-title">Haircut w/ Blowdry</span>
+                                                            <span className="list-group-price">50 $</span>
                                                         </li>
 
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Hair styling</span>
+                                                            <span className="list-group-title">Shampoo w/ Blowdry</span>
                                                             <span className="list-group-price">From 35 $</span>
                                                         </li>
-
+                                                    </ul>
+                                                    <ul className="price-list-item-list-group list-group">
+                                                        <h4> - Men</h4>
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Hair styling for occasion</span>
-                                                            <span className="list-group-price">From 35 $</span>
-                                                        </li>
-
-                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Consulting</span>
-                                                            <span className="list-group-price">From 35 $</span>
-                                                        </li>
-
-                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Trial hairstyling for occasion</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-title">Haircut</span>
+                                                            <span className="list-group-price">35 $</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -127,25 +121,53 @@ const ServicesInside = () => {
 
                                                     <ul className="price-list-item-list-group list-group">
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">All hair color</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-title">One step color</span>
+                                                            <span className="list-group-price">85 $</span>
                                                         </li>
 
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Root color</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-title">Color w/ haircut & style</span>
+                                                            <span className="list-group-price">120 $</span>
                                                         </li>
 
                                                         <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Highlights</span>
-                                                            <span className="list-group-price">From 35 $</span>
-                                                        </li>
-
-                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
-                                                            <span className="list-group-title">Hair toning</span>
-                                                            <span className="list-group-price">From 35 $</span>
+                                                            <span className="list-group-title">Highlights ( Foiling )</span>
+                                                            <span className="list-group-price">From 125 $</span>
                                                         </li>
                                                     </ul>
+                                                </div>
+
+                                                <div className="price-list-item">
+                                                    <div className="price-list-item-title">
+                                                        <h3>Smoothing Treatments</h3>
+                                                    </div>
+
+                                                    <ul className="price-list-item-list-group list-group">
+                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                                            <span className="list-group-title">Keratin treatment</span>
+                                                            <span className="list-group-price">350 $</span>
+                                                        </li>
+
+                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                                            <span className="list-group-title">Agave Smoothing treatment</span>
+                                                            <span className="list-group-price">From 175 $</span>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+
+                                                <div className="price-list-item">
+                                                    <div className="price-list-item-title">
+                                                        <h3>Perms</h3>
+                                                    </div>
+
+                                                    <ul className="price-list-item-list-group list-group">
+                                                        <li className="list-group-item d-flex justify-content-between align-items-center">
+                                                            <span className="list-group-title">Perm</span>
+                                                            <span className="list-group-price"> From 150 $</span>
+                                                        </li>
+                                                    </ul>
+
                                                 </div>
                                             </div>
                                         </div>

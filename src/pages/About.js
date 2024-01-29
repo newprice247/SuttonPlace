@@ -6,7 +6,7 @@ import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 
 import PageTitleAbout from '../blocks/page-title/PageTitleAbout';
-import AboutReviews from '../blocks/about/AboutReviews';
+// import AboutReviews from '../blocks/about/AboutReviews';
 import AboutImg from '../blocks/about/AboutImg';
 import AboutsUs from '../blocks/about/AboutUs';
 import AboutServices from '../blocks/about/AboutServices';
@@ -45,7 +45,7 @@ const About = () => {
 
                                 <AboutsUs />
 
-                                <AboutReviews />
+                                {/* <AboutReviews /> */}
 
                                 <AboutServices />
                             </div>
