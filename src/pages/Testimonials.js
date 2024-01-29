@@ -70,14 +70,15 @@ const TestimonialPage = () => {
           <div className="wrapper">
             <div className="content">
               <div className="clearfix">
+                <h2>Tell us about your visit</h2>
                 <form>
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" id="name" placeholder="Enter name" />
+                    <input type="text" className="form-control" id="name" placeholder="Your name" />
                   </div>
                   <div className="form-group">
                     <label htmlFor="testimonial">Testimonial</label>
-                    <textarea className="form-control" id="testimonial" rows="3"></textarea>
+                    <textarea className="form-control" id="testimonial" rows="3" placeholder="Tell us about your visit"></textarea>
                   </div>
                   <button
                     type="submit"
@@ -96,17 +97,17 @@ const TestimonialPage = () => {
                 </form>
                 <div className="spacer p-top-lg p-bottom-lg">
                   <div className="title">
-                    <h2>Testimonials</h2>
+                    <h2>What people are saying</h2>
                   </div>
                   <div className="row gutter-width-sm with-pb-xl spacer p-top-lg">
                     {testimonials.map((testimonial, index) => (
                       <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 mt-5" key={index}>
                         <div className="testimonial">
                           <div className="testimonial-content">
-                            <p>{testimonial.testimonial}</p>
+                            <p>" {testimonial.testimonial} "</p>
                           </div>
-                          <div className="testimonial-meta">
-                            <h4>{testimonial.name}</h4>
+                          <div className="spacer testimonial-meta text-center p-top-sm">
+                            <h4>- {testimonial.name}</h4>
                           </div>
                         </div>
                       </div>
