@@ -171,8 +171,6 @@ const ServicesInside = () => {
                                             </div>
                                         </div>
                                     </div>
-
-                                    <BackToServices />
                                 </div>
                             </div>
                         </div>
