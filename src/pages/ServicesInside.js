@@ -67,7 +67,6 @@ const ServicesInside = () => {
 
                                             <div className="price-list-item">
                                                     <div className="price-list-item-title">
-                                                        <h3></h3>
                                                     </div>
 
                                                     <ul className="price-list-item-list-group list-group">
