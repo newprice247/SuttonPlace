@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
 import Contacts from './pages/Contacts';
+import TestimonialPage from './pages/Testimonials';
 import News from './pages/News';
 import NewsSinglePost from './pages/NewsSinglePost';
 import Gallery from './pages/Gallery';
@@ -55,10 +56,10 @@ const router = createBrowserRouter([
                 path: '/services',
                 element: <ServicesInside />
             },
-            // {
-            //     path: '/services-inside',
-            //     element: <ServicesInside />
-            // },
+            {
+                path: '/testimonials',
+                element: <TestimonialPage />
+            },
             {
                 path: '/user-interface',
                 element: <UserInterface />

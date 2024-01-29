@@ -23,6 +23,9 @@ const ModalMenuPrimary = () => {
                 <li className={ "nav-item" + (window.location.pathname === '/contacts' ? " current-nav-item" : "") }>
                     <a title="Contacts" href={ process.env.PUBLIC_URL + "/contacts" }>Contact</a>
                 </li>
+                <li className={ "nav-item" + (window.location.pathname === '/testimonials' ? " current-nav-item" : "") }>
+                    <a title="Testimonials" href={ process.env.PUBLIC_URL + "/testimonials" }>Testimonials</a>
+                </li>
             </ul>
         </nav>
     );
