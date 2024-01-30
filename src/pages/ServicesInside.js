@@ -5,7 +5,6 @@ import Loading from '../blocks/loading/Loading';
 import Header from '../blocks/header/Header';
 import PageTitleServicesInside from '../blocks/page-title/PageTitleServicesInside'
 import Footer from '../blocks/footer/Footer';
-import BackToServices from '../components/button/BackToServices';
 
 const ServicesInside = () => {
     document.body.classList.add( 'single' );
