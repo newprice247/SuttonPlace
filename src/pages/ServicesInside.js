@@ -5,6 +5,7 @@ import Loading from '../blocks/loading/Loading';
 import Header from '../blocks/header/Header';
 import PageTitleServicesInside from '../blocks/page-title/PageTitleServicesInside'
 import Footer from '../blocks/footer/Footer';
+import ServicesContact from '../blocks/services/ServicesContact';
 
 const ServicesInside = () => {
     document.body.classList.add( 'single' );
@@ -167,6 +168,7 @@ const ServicesInside = () => {
                                                     </ul>
 
                                                 </div>
+                                                <ServicesContact />
                                             </div>
                                         </div>
                                     </div>

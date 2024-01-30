@@ -61,6 +61,9 @@ const Contacts = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <h2
+                                    className='text-center mt-5 mb-5'
+                                >Location</h2>
                                 <GoogleMaps />
                             </div>
                         </div>

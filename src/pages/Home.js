@@ -45,11 +45,15 @@ const Home = () => {
 
                         <ServicesHome />
                         <div
-                            style={{ height: '70vh', width: '70%', margin: '2em auto' }}
+                            style={{ height: '70vh', width: '70%', margin: '5em auto' }}
                         >
+                            <h2
+                            className='text-center mt-5 mb-5'
+                            >Location</h2>
                             <GoogleMaps />
                         </div>
                         <div className="spacer p-top-lg p-bottom-lg text-center">
+                            <h2 className="mb-4 mt-5">Contact Sutton</h2>
                             <ContactsInside />
                         </div>
 

@@ -119,13 +119,16 @@ class ServicesHome extends Component {
 
                         <div className="adv-2-swiper-button-prev">
                             <span>
-                                <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto">Previous</span>
+                                <span 
+                                className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto"
+                                >Previous</span>
                             </span>
                         </div>
 
                         <div className="adv-2-swiper-button-next">
                             <span>
-                                <span className="btn btn-lg btn-after-dot btn-link border-0 p-0 min-w-auto">Next</span>
+                                <span className="btn btn-lg btn-after-dot btn-link border-0 p-0 min-w-auto"
+                                >Next</span>
                             </span>
                         </div>
                     </div>
