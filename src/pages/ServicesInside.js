@@ -73,8 +73,8 @@ const ServicesInside = () => {
                                                     <li className="list-group-item d-flex justify-content-between align-items-center">
                                                             <span 
                                                             className="list-group-title"
-                                                            ><h4> - Consultation</h4></span>
-                                                            <span className="list-group-price">Fee waived if service is booked, OR 25 $</span>
+                                                            ><h5>Consultation</h5></span>
+                                                            <span className="list-group-price">Free with booking, OR 25 $</span>
                                                         </li>
                                                     </ul>
                                                 </div>

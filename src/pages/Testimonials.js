@@ -2,6 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { addDoc } from "firebase/firestore"; 
+import { useForm, ValidationError } from '@formspree/react';
 import React, { useState, useEffect, Fragment } from 'react';
 import MetaTags from 'react-meta-tags';
 
@@ -31,7 +32,7 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
-const TestimonialPage = () => {
+export default function TestimonialPage() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
@@ -44,7 +45,18 @@ const TestimonialPage = () => {
     getTestimonials();
   }, []);
 
+  const handleFirebaseSubmit = async () => {
+    let name = document.getElementById('name').value;
+    let testimonial = document.getElementById('message').value;
+    let email = document.getElementById('email').value;
+    await addDoc(collection(db, "testimonials"), {
+      name: name,
+      testimonial: testimonial,
+      email: email
+    });
+  }
 
+  const [state, handleSubmit] = useForm(`${process.env.REACT_APP_FORMSPREE}`);
   document.body.classList.add('page');
 
   return (
@@ -70,34 +82,61 @@ const TestimonialPage = () => {
           <div className="wrapper">
             <div className="content">
               <div className="clearfix">
-                <h2>Tell us about your visit</h2>
-                <form>
-                  <div className="form-group">
+                <h3>Tell us about your visit</h3>
+                {state.succeeded && <p>Thank you for your feedback!</p>}
+                <form
+                  onSubmit={handleSubmit}
+                  className="mt-3"
+                >
                     <label htmlFor="name">Name</label>
-                    <input type="text" className="form-control" id="name" placeholder="Your name" />
-                  </div>
-                  <div className="form-group">
+                    <input 
+                    type="text" 
+                    className="form-control mb-3" 
+                    id="name"
+                    name="name"
+                    placeholder="Your name" />
+                    <ValidationError
+                      prefix="Name"
+                      field="name"
+                      errors={state.errors}
+                    />
                     <label htmlFor="testimonial">Testimonial</label>
-                    <textarea className="form-control" id="testimonial" rows="3" placeholder="Tell us about your visit"></textarea>
-                  </div>
+                    <textarea 
+                    className="form-control mb-3" 
+                    id="message" 
+                    rows="3" 
+                    placeholder="Tell us about your visit"
+                    name="message"
+                    />
+                    <ValidationError
+                      prefix="Testimonial"
+                      field="testimonial"
+                      errors={state.errors}
+                    />
+                    <label htmlFor="email">Email (Only used for verification purposes, you will never recieve unsolicited emails)</label>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                      className='form-control'
+                      placeholder="Your email address"
+                    />
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
+                    />
+                  
                   <button
                     type="submit"
-                    className="btn btn-primary"
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      let name = document.getElementById('name').value;
-                      let testimonial = document.getElementById('testimonial').value;
-                      await addDoc(collection(db, "testimonials"), {
-                        name: name,
-                        testimonial: testimonial
-                      });
-                      window.location.reload();
-                    }}
+                    className="btn btn-primary mt-3"
+                    disabled={state.submitting}
+                    onClick={handleFirebaseSubmit}
                   >Submit</button>
                 </form>
                 <div className="spacer p-top-lg p-bottom-lg">
                   <div className="title">
-                    <h2>What people are saying</h2>
+                    <h3>What people are saying</h3>
                   </div>
                   <div className="row gutter-width-sm with-pb-xl spacer p-top-lg">
                     {testimonials.map((testimonial, index) => (
@@ -124,4 +163,3 @@ const TestimonialPage = () => {
   );
 };
 
-export default TestimonialPage;
