@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+import SwiperCore from 'swiper';
+import { Navigation } from 'swiper/modules';
+
+SwiperCore.use( [ Navigation ] );
 
 class ServicesHome extends Component {
     componentDidMount() {
@@ -18,6 +23,12 @@ class ServicesHome extends Component {
             slidePrevClass: 'adv-swiper-slide-prev',
             slideDuplicatePrevClass: 'adv-swiper-slide-duplicate-prev',
             wrapperClass: 'adv-swiper-wrapper',
+            pagination: {
+                el: '.adv-swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+
             navigation: {
                 disabledClass: 'adv-swiper-button-disabled',
                 hiddenClass: 'adv-swiper-button-hidden',
@@ -26,7 +37,7 @@ class ServicesHome extends Component {
                 prevEl: '.adv-2-swiper-button-prev'
             },
             spaceBetween: 0,
-            slidesPerView: 'auto'
+            slidesPerView: 'auto',
         } );
     }
 

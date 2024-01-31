@@ -35,7 +35,7 @@
         "react-transition-group": "^4.4.1",
         "react-visibility-sensor": "^5.1.1",
         "simplebar": "^5.2.1",
-        "swiper": "^5.4.2"
+        "swiper": "^10.0.0"
     },
     "scripts": {
         "dev": "yarn build && react-scripts start",
