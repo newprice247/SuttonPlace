@@ -6,13 +6,13 @@ const PageTitleHome = () => {
         <section id="page-title" className="block with-img" style={ { backgroundImage: 'url(assets/img/bg/woodTools.jpg)' } }>
             <div className="wrapper text-center d-flex">
                 <div className="align-self-center w-100">
-                    <div className="title">
+                    <div className="title spacer m-bottom-lg">
                         <h1 className="large">Sutton Place Hair Salon</h1>
                     </div>
 
-                    <div className="description spacer p-top-lg">
+                    {/* <div className="description spacer p-top-lg">
                         <p>For women and men</p>
-                    </div>
+                    </div> */}
 
                     {/* <div className="spacer p-top-lg no-space">
                         <Link href="#contact-us"
