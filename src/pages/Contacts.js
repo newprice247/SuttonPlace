@@ -11,6 +11,7 @@ import FormspreeForm from '../blocks/contacts/FormspreeForm';
 
 import GoogleMaps from '../blocks/google-maps/GoogleMaps';
 import ContactsInside from '../blocks/contacts/Contacts';
+import GalleryHome from '../blocks/gallery/GalleryHome';
 
 const Contacts = () => {
     document.body.classList.add( 'page' );
@@ -69,6 +70,7 @@ const Contacts = () => {
                         </div>
                     </div>
                 </div>
+                <GalleryHome />
             </main>
 
             <Footer />

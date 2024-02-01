@@ -8,6 +8,7 @@ import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 
 import PageTitleGallery from '../blocks/page-title/PageTitleGallery';
+import GalleryHome from '../blocks/gallery/GalleryHome';
 
 import { Mousewheel, EffectCoverflow, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -21,7 +22,7 @@ import '../styles.css';
 
 const Gallery = () => {
     document.body.classList.add('page');
-    
+
 
     return (
         <Fragment>
@@ -79,7 +80,7 @@ const Gallery = () => {
                                         depth: 100,
                                         modifier: 1,
                                         slideShadows: true,
-                                      }}
+                                    }}
                                 >
                                     <SwiperSlide>
                                         <img
@@ -109,7 +110,11 @@ const Gallery = () => {
                         ))}
 
                     </Swiper>
+
                 </section>
+                                        
+                <GalleryHome />
+
             </main>
 
             <Footer />

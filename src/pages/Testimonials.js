@@ -10,6 +10,7 @@ import Loading from '../blocks/loading/Loading';
 import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
 import PageTitleTestimonials from "../blocks/page-title/PageTitleTestimonials";
+import GalleryHome from "../blocks/gallery/GalleryHome";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -157,6 +158,7 @@ export default function TestimonialPage() {
             </div>
           </div>
         </div>
+        <GalleryHome />
       </main>
       <Footer />
     </Fragment>
