@@ -54,5 +54,11 @@
         "pic2": "assets/img/gallery/shortHair/susan2.jpg",
         "pic1alt": "Susan's short hair",
         "pic2alt": "Susan's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/april1.jpg",
+        "pic2": "assets/img/gallery/shortHair/april2.jpg",
+        "pic1alt": "April's short hair",
+        "pic2alt": "April's short hair"
     }
 ]
