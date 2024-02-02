@@ -36,15 +36,27 @@ const db = getFirestore(app);
 
 const setSubmittedLocalStorage = () => {
   localStorage.setItem('submitted', 'true');
+  localStorage.setItem('name', document.getElementById('name').value);
+  localStorage.setItem('email', document.getElementById('email').value);
 }
 
-const getSubmittedLocalStorage= () => {
-  console.log(`Local Storage Submitted: ${localStorage.getItem('submitted')} `);
-  return localStorage.getItem('submitted');
+const getLocalStorage= () => {
+  return {
+    submitted: localStorage.getItem('submitted'),
+    name: localStorage.getItem('name'),
+    email: localStorage.getItem('email')
+  }
+
+}
+
+const deleteSubmittedLocalStorage = () => {
+  localStorage.removeItem('submitted');
+  localStorage.removeItem('name');
+  localStorage.removeItem('email');
 }
 
 export default function TestimonialPage() {
-  const [submitted, setSubmitted] = useState(false);
+  const [localStorage, setLocalStorage] = useState(getLocalStorage());
   const [testimonials, setTestimonials] = useState([]);
   const [ip, setIp] = useState('');
   const [userSubmitted, setUserSubmitted] = useState(false);
@@ -53,19 +65,12 @@ export default function TestimonialPage() {
   const getIP = async () => {
     const response = await axios.get('https://api64.ipify.org?format=json');
     setIp(response.data.ip)
-    console.log(response.data);
   }
-
-  useEffect(() => {
-    getSubmittedLocalStorage();
-    if (getSubmittedLocalStorage() === 'true') {
-      setSubmitted(true);
-    }
-  }, []);
 
   useEffect(() => {
     getIP();
   }, []);
+
 
 
 
@@ -74,8 +79,10 @@ export default function TestimonialPage() {
       const testimonialCol = collection(db, 'testimonials');
       const testimonialSnapshot = await getDocs(testimonialCol);
       const testimonialList = testimonialSnapshot.docs.map(doc => doc.data());
+      console.log(testimonialList);
+      console.log(localStorage);
       for (let i = 0; i < testimonialList.length; i++) {
-        if (testimonialList[i].ipAddress === ip) {
+        if (testimonialList[i].ipAddress === ip && testimonialList[i].name === localStorage.name && testimonialList[i].email === localStorage.email) {
           setUserSubmitted(true);
           setMyDoc(doc(db, "testimonials", testimonialSnapshot.docs[i].id));
 
@@ -84,7 +91,7 @@ export default function TestimonialPage() {
       setTestimonials(testimonialList);
     }
     getTestimonials();
-  }, [ip]);
+  }, [ip, localStorage]);
 
 
 
@@ -94,7 +101,7 @@ export default function TestimonialPage() {
     let email = document.getElementById('email').value;
     let ipAddress = ip;
     setSubmittedLocalStorage();
-    setSubmitted(true);
+    setLocalStorage( { submitted: true, name: name, email: email});
     await addDoc(collection(db, "testimonials"), {
       name: name,
       testimonial: testimonial,
@@ -111,7 +118,7 @@ export default function TestimonialPage() {
     let email = document.getElementById('email').value;
     let ipAddress = ip;
     setSubmittedLocalStorage();
-    setSubmitted(true);
+    setLocalStorage( { submitted: true, name: name, email: email});
     await setDoc(myDoc, {
       name: name,
       testimonial: testimonial,
@@ -124,7 +131,9 @@ export default function TestimonialPage() {
 
   const handleFirebaseDelete = async () => {
     if (window.confirm('Are you sure you want to delete this testimonial?')) {
+
       await deleteDoc(myDoc);
+      deleteSubmittedLocalStorage();
       document.getElementById('testimonial-top').scrollIntoView();
       window.location.reload();
     } else {
@@ -213,13 +222,13 @@ export default function TestimonialPage() {
                       field="email"
                       errors={state.errors}
                     />
-                    {userSubmitted && submitted && !userEditing ? (
+                    {userSubmitted && localStorage.submitted && localStorage.name && localStorage.email && !userEditing ? (
                       <button
                         type="submit"
                         className="btn btn-primary mt-3 border rounded"
                         disabled='true'
                       >Submit</button>
-                    ) : userSubmitted && submitted && userEditing ? (
+                    ) : userSubmitted && localStorage.submitted && localStorage.name && localStorage.email && userEditing ? (
                       null
                     ) :
                       (
@@ -255,7 +264,7 @@ export default function TestimonialPage() {
                           <div className="spacer testimonial-meta text-center p-top-sm">
                             <h4>- {testimonial.name}</h4>
                           </div>
-                          {userSubmitted && submitted && !userEditing && testimonial['ipAddress'] === ip ? (
+                          {userSubmitted && localStorage.submitted && localStorage.name === testimonial.name && localStorage.email === testimonial.email && !userEditing && testimonial['ipAddress'] === ip ? (
                             <div
                               className="text-center mt-3"
                             >
@@ -280,7 +289,7 @@ export default function TestimonialPage() {
                                 Delete
                               </button>
                             </div>
-                          ) : userSubmitted && submitted && userEditing ? (
+                          ) : userSubmitted && localStorage && localStorage.name && localStorage.email && userEditing ? (
                             null
                           ) : (
                             null
