@@ -1,11 +1,15 @@
 [
     {
-        "pic1": "assets/img/gallery/vikki1.jpg",
-        "pic2": "assets/img/gallery/vikki2.jpg",
-        "pic3": "assets/img/gallery/vikki3.jpg",
+        "pic1": "assets/img/gallery/longHair/vikki1.jpg",
+        "pic2": "assets/img/gallery/longHair/vikki2.jpg",
+        "pic3": "assets/img/gallery/longHair/vikki3.jpg",
         "pic1alt": "Vikki Picture 1",
         "pic2alt": "Vikki Picture 2",
         "pic3alt": "Vikki Picture 3"
+    },
+    {
+        "pic1" : "assets/img/gallery/longHair/kathyC1.jpg",
+        "alt1" : "Kathy C"
     },
     {
         "pic1": "assets/img/gallery/barbara1.jpg",
@@ -24,6 +28,10 @@
         "pic2alt": "Cathy N Picture 2"
     },
     {
+        "pic1" : "assets/img/gallery/longHair/linda1.jpg",
+        "alt1" : "Linda"
+    },
+    {
         "pic1": "assets/img/gallery/jane1.jpg",
         "pic2": "assets/img/gallery/jane2.jpg",
         "pic1alt": "Jane Picture 1",
@@ -36,17 +44,17 @@
         "pic2alt": "Janet Picture 2"
     },
     {
-        "pic1": "assets/img/gallery/john1.jpg",
-        "pic2": "assets/img/gallery/john2.jpg",
-        "pic3": "assets/img/gallery/john3.jpg",
+        "pic1": "assets/img/gallery/guyCuts/john1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/john2.jpg",
+        "pic3": "assets/img/galler/guyCutsy/john3.jpg",
         "pic1alt": "John Picture 1",
         "pic2alt": "John Picture 2",
         "pic3alt": "John Picture 3"
     },
     {
-        "pic1": "assets/img/gallery/nathan1.jpg",
-        "pic2": "assets/img/gallery/nathan2.jpg",
-        "pic3": "assets/img/gallery/nathan3.jpg",
+        "pic1": "assets/img/gallery/guyCuts/nathan1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/nathan2.jpg",
+        "pic3": "assets/img/gallery/guyCuts/nathan3.jpg",
         "pic1alt": "Nathan Picture 1",
         "pic2alt": "Nathan Picture 2",
         "pic3alt": "Nathan Picture 3"
@@ -66,8 +74,8 @@
         "pic2alt": "Pat Picture 2"
     },
     {
-        "pic1": "assets/img/gallery/paul1.jpg",
-        "pic2": "assets/img/gallery/paul2.jpg",
+        "pic1": "assets/img/gallery/guyCuts/paul1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/paul2.jpg",
         "pic1alt": "Paul Picture 1",
         "pic2alt": "Paul Picture 2"
     }

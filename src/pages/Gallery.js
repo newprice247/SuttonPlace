@@ -3,6 +3,10 @@ import { useState, useEffect } from 'react';
 import MetaTags from 'react-meta-tags';
 import galleryPics from '../data/gallery/galleryPics';
 import menPics from '../data/gallery/menPics';
+import longPics from '../data/gallery/longPics';
+import midPics from '../data/gallery/midPics';
+import shortPics from '../data/gallery/shortPics';
+import smoothingPics from '../data/gallery/smoothingPics';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Loading from '../blocks/loading/Loading';
@@ -29,13 +33,46 @@ const Gallery = () => {
     useEffect(() => {
         const allHairButton = document.getElementById('allHairButton');
         const menHairButton = document.getElementById('menHairButton');
+        const longHairButton = document.getElementById('longHairButton');
+        const midHairButton = document.getElementById('midHairButton');
+        const shortHairButton = document.getElementById('shortHairButton');
+        const smoothingButton = document.getElementById('smoothingButton');
 
         if (activeButton === 'allHairButton') {
             allHairButton.classList.add('activeGalleryButton');
             menHairButton.classList.remove('activeGalleryButton');
+            longHairButton.classList.remove('activeGalleryButton');
+            midHairButton.classList.remove('activeGalleryButton');
+            shortHairButton.classList.remove('activeGalleryButton');
+            smoothingButton.classList.remove('activeGalleryButton');
         } else if (activeButton === 'menHairButton') {
             menHairButton.classList.add('activeGalleryButton');
             allHairButton.classList.remove('activeGalleryButton');
+            longHairButton.classList.remove('activeGalleryButton');
+            midHairButton.classList.remove('activeGalleryButton');
+            shortHairButton.classList.remove('activeGalleryButton');
+            smoothingButton.classList.remove('activeGalleryButton');
+        } else if (activeButton === 'midHairButton') {
+            midHairButton.classList.add('activeGalleryButton');
+            allHairButton.classList.remove('activeGalleryButton');
+            menHairButton.classList.remove('activeGalleryButton');
+            longHairButton.classList.remove('activeGalleryButton');
+            shortHairButton.classList.remove('activeGalleryButton');
+            smoothingButton.classList.remove('activeGalleryButton');
+        } else if (activeButton === 'shortHairButton') {
+            shortHairButton.classList.add('activeGalleryButton');
+            allHairButton.classList.remove('activeGalleryButton');
+            menHairButton.classList.remove('activeGalleryButton');
+            longHairButton.classList.remove('activeGalleryButton');
+            midHairButton.classList.remove('activeGalleryButton');
+            smoothingButton.classList.remove('activeGalleryButton');
+        } else if (activeButton === 'longHairButton') {
+            longHairButton.classList.add('activeGalleryButton');
+            allHairButton.classList.remove('activeGalleryButton');
+            menHairButton.classList.remove('activeGalleryButton');
+            midHairButton.classList.remove('activeGalleryButton');
+            shortHairButton.classList.remove('activeGalleryButton');
+            smoothingButton.classList.remove('activeGalleryButton');
         }
         
     }, [activeButton]);
@@ -92,6 +129,50 @@ const Gallery = () => {
                             className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
                         >
                             Men's Haircuts
+                        </button>
+                        <button
+                            id='longHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(longPics)
+                                setActiveButton('longHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Long Hair
+                        </button>
+                        <button
+                            id='midHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(midPics)
+                                setActiveButton('midHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Mid-Length Hair
+                        </button>
+                        <button
+                            id='shortHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(shortPics)
+                                setActiveButton('shortHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Short Hair
+                        </button>
+                        <button
+                            id='smoothingButton'
+                            onClick={() => {
+                                setCurrentPicArray(smoothingPics)
+                                setActiveButton('smoothingButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Smoothing Treatments
                         </button>
                     </div>
                     <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>

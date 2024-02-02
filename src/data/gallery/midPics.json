@@ -1,0 +1,53 @@
+[
+    {
+        "pic1": "assets/img/gallery/midLength/barbara1.jpg",
+        "pic2": "assets/img/gallery/midLength/barbara2.jpg",
+        "pic1alt": "Barbara's hair",
+        "pic2alt": "Barbara's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/bobby1.jpg",
+        "pic2": "assets/img/gallery/midLength/bobby2.jpg",
+        "pic1alt": "Bobby's hair",
+        "pic2alt": "Bobby's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/gaborMid1.jpg",
+        "pic2": "assets/img/gallery/midLength/gaborMid2.jpg",
+        "pic3": "assets/img/gallery/midLength/gaborMid3.jpg",
+        "pic1alt": "Gabor's hair",
+        "pic2alt": "Gabor's hair",
+        "pic3alt": "Gabor's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/janet1.jpg",
+        "pic2": "assets/img/gallery/midLength/janet2.jpg",
+        "pic1alt": "Janet's hair",
+        "pic2alt": "Janet's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/janice1.jpg",
+        "pic2": "assets/img/gallery/midLength/janice2.jpg",
+        "pic1alt": "Janice's hair",
+        "pic2alt": "Janice's hair"
+
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/kate1.jpg",
+        "pic2": "assets/img/gallery/midLength/kate2.jpg",
+        "pic1alt": "Kate's hair",
+        "pic2alt": "Kate's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/kathyN1.jpg",
+        "pic2": "assets/img/gallery/midLength/kathyN2.jpg",
+        "pic1alt": "Kathy's hair",
+        "pic2alt": "Kathy's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/patty1.jpg",
+        "pic2": "assets/img/gallery/midLength/patty2.jpg",
+        "pic1alt": "Patty's hair",
+        "pic2alt": "Patty's hair"
+    }
+]

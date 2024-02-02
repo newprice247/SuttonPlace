@@ -1,0 +1,14 @@
+[
+    {
+        "pic1": "assets/img/gallery/smoothingTreatment/cherylBefore.jpg",
+        "pic2": "assets/img/gallery/smoothingTreatment/cherylAfter.jpg",
+        "pic1alt": "Cheryl before smoothing treatment",
+        "pic2alt": "Cheryl after smoothing treatment"
+    },
+    {
+        "pic1": "assets/img/gallery/smoothingTreatment/tiffanyBefore.jpg",
+        "pic2": "assets/img/gallery/smoothingTreatment/tiffanyAfter.jpg",
+        "pic1alt": "Tiffany before smoothing treatment",
+        "pic2alt": "Tiffany after smoothing treatment"
+    }
+]
