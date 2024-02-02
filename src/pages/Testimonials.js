@@ -34,7 +34,17 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
 
+const setSubmittedLocalStorage = () => {
+  localStorage.setItem('submitted', 'true');
+}
+
+const getSubmittedLocalStorage= () => {
+  console.log(`Local Storage Submitted: ${localStorage.getItem('submitted')} `);
+  return localStorage.getItem('submitted');
+}
+
 export default function TestimonialPage() {
+  const [submitted, setSubmitted] = useState(false);
   const [testimonials, setTestimonials] = useState([]);
   const [ip, setIp] = useState('');
   const [userSubmitted, setUserSubmitted] = useState(false);
@@ -42,8 +52,16 @@ export default function TestimonialPage() {
   const [myDoc, setMyDoc] = useState({});
   const getIP = async () => {
     const response = await axios.get('https://api64.ipify.org?format=json');
-    setIp(response.data.ip);
+    setIp(response.data.ip)
+    console.log(response.data);
   }
+
+  useEffect(() => {
+    getSubmittedLocalStorage();
+    if (getSubmittedLocalStorage() === 'true') {
+      setSubmitted(true);
+    }
+  }, []);
 
   useEffect(() => {
     getIP();
@@ -56,7 +74,6 @@ export default function TestimonialPage() {
       const testimonialCol = collection(db, 'testimonials');
       const testimonialSnapshot = await getDocs(testimonialCol);
       const testimonialList = testimonialSnapshot.docs.map(doc => doc.data());
-      console.log(testimonialList);
       for (let i = 0; i < testimonialList.length; i++) {
         if (testimonialList[i].ipAddress === ip) {
           setUserSubmitted(true);
@@ -69,10 +86,6 @@ export default function TestimonialPage() {
     getTestimonials();
   }, [ip]);
 
-  useEffect(() => {
-    console.log(myDoc);
-  }, [myDoc]);
-
 
 
   const handleFirebaseSubmit = async () => {
@@ -80,6 +93,8 @@ export default function TestimonialPage() {
     let testimonial = document.getElementById('message').value;
     let email = document.getElementById('email').value;
     let ipAddress = ip;
+    setSubmittedLocalStorage();
+    setSubmitted(true);
     await addDoc(collection(db, "testimonials"), {
       name: name,
       testimonial: testimonial,
@@ -95,6 +110,8 @@ export default function TestimonialPage() {
     let testimonial = document.getElementById('message').value;
     let email = document.getElementById('email').value;
     let ipAddress = ip;
+    setSubmittedLocalStorage();
+    setSubmitted(true);
     await setDoc(myDoc, {
       name: name,
       testimonial: testimonial,
@@ -196,13 +213,13 @@ export default function TestimonialPage() {
                       field="email"
                       errors={state.errors}
                     />
-                    {userSubmitted && !userEditing ? (
+                    {userSubmitted && submitted && !userEditing ? (
                       <button
                         type="submit"
                         className="btn btn-primary mt-3 border rounded"
                         disabled='true'
                       >Submit</button>
-                    ) : userSubmitted && userEditing ? (
+                    ) : userSubmitted && submitted && userEditing ? (
                       null
                     ) :
                       (
@@ -238,7 +255,7 @@ export default function TestimonialPage() {
                           <div className="spacer testimonial-meta text-center p-top-sm">
                             <h4>- {testimonial.name}</h4>
                           </div>
-                          {userSubmitted && !userEditing && testimonial['ipAddress'] === ip ? (
+                          {userSubmitted && submitted && !userEditing && testimonial['ipAddress'] === ip ? (
                             <div
                               className="text-center mt-3"
                             >
@@ -263,7 +280,7 @@ export default function TestimonialPage() {
                                 Delete
                               </button>
                             </div>
-                          ) : userSubmitted && userEditing ? (
+                          ) : userSubmitted && submitted && userEditing ? (
                             null
                           ) : (
                             null

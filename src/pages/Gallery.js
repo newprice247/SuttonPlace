@@ -64,6 +64,7 @@ const Gallery = () => {
 
             <main id="main" className="site-main">
                 <PageTitleGallery />
+                
 
                 <section id="page-content" className="spacer p-top-xl text-center m-bottom-lg"
                     style={{ height: '100vh', width: '80%', margin: '0em auto' }}
