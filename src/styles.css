@@ -43,3 +43,7 @@
     background: #eee;
   }
   
+  .activeGalleryButton {
+    background-color: #ffe293;
+    color: #ffffff;
+  }

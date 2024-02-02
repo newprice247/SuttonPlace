@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
+import { useState, useEffect } from 'react';
 import MetaTags from 'react-meta-tags';
 import galleryPics from '../data/gallery/galleryPics';
+import menPics from '../data/gallery/menPics';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Loading from '../blocks/loading/Loading';
@@ -22,7 +24,23 @@ import '../styles.css';
 
 const Gallery = () => {
     document.body.classList.add('page');
+    const [activeButton, setActiveButton] = useState('allHairButton');
 
+    useEffect(() => {
+        const allHairButton = document.getElementById('allHairButton');
+        const menHairButton = document.getElementById('menHairButton');
+
+        if (activeButton === 'allHairButton') {
+            allHairButton.classList.add('activeGalleryButton');
+            menHairButton.classList.remove('activeGalleryButton');
+        } else if (activeButton === 'menHairButton') {
+            menHairButton.classList.add('activeGalleryButton');
+            allHairButton.classList.remove('activeGalleryButton');
+        }
+        
+    }, [activeButton]);
+
+    const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
 
     return (
         <Fragment>
@@ -47,12 +65,39 @@ const Gallery = () => {
             <main id="main" className="site-main">
                 <PageTitleGallery />
 
-                <section id="page-content" className="spacer p-top-xl text-center"
+                <section id="page-content" className="spacer p-top-xl text-center m-bottom-lg"
                     style={{ height: '100vh', width: '80%', margin: '0em auto' }}
                 >
-                    <h5>Swipe Up, Down, Left, or Right to View Photos</h5>
+                    <h4>Filter by Hair Category:</h4>
+                    <div className="d-flex justify-content-center mb-3"  id='swiperScroll'>
+                        <button
+                            id='allHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(galleryPics)
+                                setActiveButton('allHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            All Hair
+                        </button>
+                        <button
+                            id='menHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(menPics)
+                                setActiveButton('menHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Men's Haircuts
+                        </button>
+                    </div>
+                    <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>
+
                     <Swiper
-                        className="mySwiper swiper-v border rounded"
+
+                        className="mySwiper swiper-v border rounded "
                         direction='vertical'
                         spaceBetween={50}
                         pagination={{
@@ -61,7 +106,7 @@ const Gallery = () => {
                         modules={[Mousewheel, Pagination]}
                         mousewheel={true}
                     >
-                        {galleryPics.map((pic, index) => (
+                        {currentPicArray.map((pic, index) => (
                             <SwiperSlide>
                                 <Swiper
                                     className="mySwiper2 swiper-h"
@@ -112,7 +157,7 @@ const Gallery = () => {
                     </Swiper>
 
                 </section>
-                                        
+
                 <GalleryHome />
 
             </main>

@@ -15,6 +15,28 @@
 	z-index: 1;
 }
 
+.swiper-container-vertical {
+	.swiper-button-next {
+		left: 75%;
+		transform: rotate(-90deg);
+		transform-origin: left center;
+	}
+	.swiper-button-prev {
+	  left: 25%;
+	  transform: rotate(90deg);
+	  transform-origin: left center;
+	}
+  
+	.swiper-button-prev {
+	  top: 10px;
+	}
+  
+	.swiper-button-next {
+	  top: auto;
+	  bottom: 10px;
+	}
+  }
+
 .adv-swiper-container-vertical > .swiper-wrapper {
 	flex-direction: column;
 }
