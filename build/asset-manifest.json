@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1b1de1a6.css",
-    "main.js": "/static/js/main.dde612cf.js",
+    "main.js": "/static/js/main.d64fc8ab.js",
     "static/media/Cardo-Bold.svg": "/static/media/Cardo-Bold.886e86071c0fb808ea0f.svg",
     "static/media/Cardo-Regular.svg": "/static/media/Cardo-Regular.2271a38529fe60e9d7cd.svg",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.48ea9f1ebdcfe18a5912.svg",
@@ -41,10 +41,10 @@
     "index.html": "/index.html",
     "static/media/loader.svg": "/static/media/loader.74b9486b37a7a75d5e82.svg",
     "main.1b1de1a6.css.map": "/static/css/main.1b1de1a6.css.map",
-    "main.dde612cf.js.map": "/static/js/main.dde612cf.js.map"
+    "main.d64fc8ab.js.map": "/static/js/main.d64fc8ab.js.map"
   },
   "entrypoints": [
     "static/css/main.1b1de1a6.css",
-    "static/js/main.dde612cf.js"
+    "static/js/main.d64fc8ab.js"
   ]
 }

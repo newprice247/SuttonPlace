@@ -238,7 +238,7 @@ export default function TestimonialPage() {
                           <div className="spacer testimonial-meta text-center p-top-sm">
                             <h4>- {testimonial.name}</h4>
                           </div>
-                          {userSubmitted && !userEditing ? (
+                          {userSubmitted && !userEditing && testimonial['ipAddress'] === ip ? (
                             <div
                               className="text-center mt-3"
                             >
