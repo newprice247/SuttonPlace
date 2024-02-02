@@ -1,10 +1,11 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from 'firebase/firestore';
-import { addDoc } from "firebase/firestore"; 
+import { addDoc, setDoc, doc, deleteDoc } from "firebase/firestore";
 import { useForm, ValidationError } from '@formspree/react';
 import React, { useState, useEffect, Fragment } from 'react';
 import MetaTags from 'react-meta-tags';
+import axios from 'axios';
 
 import Loading from '../blocks/loading/Loading';
 import Header from '../blocks/header/Header';
@@ -35,26 +36,85 @@ const db = getFirestore(app);
 
 export default function TestimonialPage() {
   const [testimonials, setTestimonials] = useState([]);
+  const [ip, setIp] = useState('');
+  const [userSubmitted, setUserSubmitted] = useState(false);
+  const [userEditing, setUserEditing] = useState(false);
+  const [myDoc, setMyDoc] = useState({});
+  const getIP = async () => {
+    const response = await axios.get('https://api64.ipify.org?format=json');
+    setIp(response.data.ip);
+  }
+
+  useEffect(() => {
+    getIP();
+  }, []);
+
+
 
   useEffect(() => {
     const getTestimonials = async () => {
       const testimonialCol = collection(db, 'testimonials');
       const testimonialSnapshot = await getDocs(testimonialCol);
       const testimonialList = testimonialSnapshot.docs.map(doc => doc.data());
+      console.log(testimonialList);
+      for (let i = 0; i < testimonialList.length; i++) {
+        if (testimonialList[i].ipAddress === ip) {
+          setUserSubmitted(true);
+          setMyDoc(doc(db, "testimonials", testimonialSnapshot.docs[i].id));
+
+        }
+      }
       setTestimonials(testimonialList);
     }
     getTestimonials();
-  }, []);
+  }, [ip]);
+
+  useEffect(() => {
+    console.log(myDoc);
+  }, [myDoc]);
+
+
 
   const handleFirebaseSubmit = async () => {
     let name = document.getElementById('name').value;
     let testimonial = document.getElementById('message').value;
     let email = document.getElementById('email').value;
+    let ipAddress = ip;
     await addDoc(collection(db, "testimonials"), {
       name: name,
       testimonial: testimonial,
-      email: email
+      email: email,
+      ipAddress: ipAddress
     });
+    document.getElementById('testimonial-top').scrollIntoView();
+    window.location.reload();
+  }
+
+  const handleFirebaseUpdate = async () => {
+    let name = document.getElementById('name').value;
+    let testimonial = document.getElementById('message').value;
+    let email = document.getElementById('email').value;
+    let ipAddress = ip;
+    await setDoc(myDoc, {
+      name: name,
+      testimonial: testimonial,
+      email: email,
+      ipAddress: ipAddress
+    });
+    document.getElementById('testimonial-top').scrollIntoView();
+    window.location.reload();
+  }
+
+  const handleFirebaseDelete = async () => {
+    if (window.confirm('Are you sure you want to delete this testimonial?')) {
+      await deleteDoc(myDoc);
+      document.getElementById('testimonial-top').scrollIntoView();
+      window.location.reload();
+    } else {
+      return;
+    }
+
+
   }
 
   const [state, handleSubmit] = useForm(`${process.env.REACT_APP_FORMSPREE}`);
@@ -82,32 +142,41 @@ export default function TestimonialPage() {
         <div id="page-content" className="spacer p-top-lg">
           <div className="wrapper">
             <div className="content">
-              <div className="clearfix">
+              <div className="clearfix" id="testimonial-top">
                 <h3>Tell us about your visit</h3>
-                {state.succeeded && <p>Thank you for your feedback!</p>}
-                <form
-                  onSubmit={handleSubmit}
-                  className="mt-3"
-                >
+                {state.succeeded ? (
+                  <div
+                    className="alert alert-success"
+                    style={{ width: "100%", height: "50%", marginBottom: "20em" }}
+                    role="alert"
+                    id
+                  >
+                    Thanks for the feedback!
+                  </div>
+                ) : (
+                  <form
+                    onSubmit={handleSubmit}
+                    className="mt-3"
+                  >
                     <label htmlFor="name">Name</label>
-                    <input 
-                    type="text" 
-                    className="form-control mb-3" 
-                    id="name"
-                    name="name"
-                    placeholder="Your name" />
+                    <input
+                      type="text"
+                      className="form-control mb-3"
+                      id="name"
+                      name="name"
+                      placeholder="Your name" />
                     <ValidationError
                       prefix="Name"
                       field="name"
                       errors={state.errors}
                     />
                     <label htmlFor="testimonial">Testimonial</label>
-                    <textarea 
-                    className="form-control mb-3" 
-                    id="message" 
-                    rows="3" 
-                    placeholder="Tell us about your visit"
-                    name="message"
+                    <textarea
+                      className="form-control mb-3"
+                      id="message"
+                      rows="3"
+                      placeholder="Tell us about your visit"
+                      name="message"
                     />
                     <ValidationError
                       prefix="Testimonial"
@@ -127,14 +196,34 @@ export default function TestimonialPage() {
                       field="email"
                       errors={state.errors}
                     />
-                  
-                  <button
-                    type="submit"
-                    className="btn btn-primary mt-3"
-                    disabled={state.submitting}
-                    onClick={handleFirebaseSubmit}
-                  >Submit</button>
-                </form>
+                    {userSubmitted && !userEditing ? (
+                      <button
+                        type="submit"
+                        className="btn btn-primary mt-3 border rounded"
+                        disabled='true'
+                      >Submit</button>
+                    ) : userSubmitted && userEditing ? (
+                      null
+                    ) :
+                      (
+                        <button
+                          type="submit"
+                          className="btn btn-primary mt-3 border rounded"
+                          disabled={state.submitting}
+                          onClick={handleFirebaseSubmit}
+                        >Submit</button>
+                      )}
+
+                    {userEditing && (
+                      <button
+                        type="submit"
+                        className="btn btn-primary mt-3 border rounded"
+                        disabled={state.submitting}
+                        onClick={handleFirebaseUpdate}
+                      >Update</button>
+                    )}
+                  </form>
+                )}
                 <div className="spacer p-top-lg p-bottom-lg">
                   <div className="title">
                     <h3>What people are saying</h3>
@@ -149,6 +238,36 @@ export default function TestimonialPage() {
                           <div className="spacer testimonial-meta text-center p-top-sm">
                             <h4>- {testimonial.name}</h4>
                           </div>
+                          {userSubmitted && !userEditing ? (
+                            <div
+                              className="text-center mt-3"
+                            >
+                              <button
+                                className="btn btn-primary btn-sm mt-3 border rounded"
+                                onClick={() => {
+                                  document.getElementById('name').value = testimonial.name;
+                                  document.getElementById('message').value = testimonial.testimonial;
+                                  document.getElementById('email').value = testimonial.email;
+                                  document.getElementById('testimonial-top').scrollIntoView();
+                                  setUserEditing(true);
+                                }}
+                              >
+                                Edit
+                              </button>
+                              <button
+                                className="btn btn-primary btn-sm mt-3 border rounded"
+                                onClick={() => {
+                                  handleFirebaseDelete();
+                                }}
+                              >
+                                Delete
+                              </button>
+                            </div>
+                          ) : userSubmitted && userEditing ? (
+                            null
+                          ) : (
+                            null
+                          )}
                         </div>
                       </div>
                     ))}
