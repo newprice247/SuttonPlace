@@ -74,7 +74,7 @@ const Gallery = () => {
             shortHairButton.classList.remove('activeGalleryButton');
             smoothingButton.classList.remove('activeGalleryButton');
         }
-        
+
     }, [activeButton]);
 
     const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
@@ -101,15 +101,15 @@ const Gallery = () => {
 
             <main id="main" className="site-main">
                 <PageTitleGallery />
-                
+
 
                 <section id="page-content" className="spacer p-top-xl text-center m-bottom-lg"
                     style={{ height: '100vh', width: '80%', margin: '0em auto' }}
                 >
                     <h4>Filter by Hair Category:</h4>
-                    <div 
-                    className="d-flex justify-content-center mb-3 flex-wrap align-items-center"  
-                    id='swiperScroll'>
+                    <div
+                        className="d-flex justify-content-center mb-3 flex-wrap align-items-center"
+                        id='swiperScroll'>
                         <button
                             id='allHairButton'
                             onClick={() => {
@@ -121,17 +121,31 @@ const Gallery = () => {
                         >
                             All Hair
                         </button>
+
                         <button
-                            id='menHairButton'
+                            id='shortHairButton'
                             onClick={() => {
-                                setCurrentPicArray(menPics)
-                                setActiveButton('menHairButton')
+                                setCurrentPicArray(shortPics)
+                                setActiveButton('shortHairButton')
                                 document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
                             }}
                             className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
                         >
-                            Men's Haircuts
+                            Short Hair
                         </button>
+
+                        <button
+                            id='midHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(midPics)
+                                setActiveButton('midHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Mid-Length Hair
+                        </button>
+
                         <button
                             id='longHairButton'
                             onClick={() => {
@@ -144,28 +158,6 @@ const Gallery = () => {
                             Long Hair
                         </button>
                         <button
-                            id='midHairButton'
-                            onClick={() => {
-                                setCurrentPicArray(midPics)
-                                setActiveButton('midHairButton')
-                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
-                            }}
-                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
-                        >
-                            Mid-Length Hair
-                        </button>
-                        <button
-                            id='shortHairButton'
-                            onClick={() => {
-                                setCurrentPicArray(shortPics)
-                                setActiveButton('shortHairButton')
-                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
-                            }}
-                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
-                        >
-                            Short Hair
-                        </button>
-                        <button
                             id='smoothingButton'
                             onClick={() => {
                                 setCurrentPicArray(smoothingPics)
@@ -176,6 +168,19 @@ const Gallery = () => {
                         >
                             Smoothing Treatments
                         </button>
+                        <button
+                            id='menHairButton'
+                            onClick={() => {
+                                setCurrentPicArray(menPics)
+                                setActiveButton('menHairButton')
+                                document.getElementById('swiperScroll').scrollIntoView({ behavior: 'smooth' })
+                            }}
+                            className="btn btn-lg btn-link min-w-auto  text-uppercase border-dark p-2 m-2 rounded"
+                        >
+                            Men's Haircuts
+                        </button>
+
+
                     </div>
                     <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>
 

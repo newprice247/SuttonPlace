@@ -1,110 +1,6 @@
 [
-    {
-        "pic1": "assets/img/gallery/guyCuts/john1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/john2.jpg",
-        "pic3": "assets/img/gallery/guyCuts/john3.jpg",
-        "pic1alt": "John Picture 1",
-        "pic2alt": "John Picture 2",
-        "pic3alt": "John Picture 3"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/nathan1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/nathan2.jpg",
-        "pic3": "assets/img/gallery/guyCuts/nathan3.jpg",
-        "pic1alt": "Nathan Picture 1",
-        "pic2alt": "Nathan Picture 2",
-        "pic3alt": "Nathan Picture 3"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/paul1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/paul2.jpg",
-        "pic1alt": "Paul Picture 1",
-        "pic2alt": "Paul Picture 2"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/bob.jpg",
-        "pic2": "assets/img/gallery/guyCuts/bob2.jpg",
-        "pic1alt": "Bob Picture 1",
-        "pic2alt": "Bob Picture 2"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/james1.jpg",
-        "pic1alt": "James Picture 1"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/matt.jpg",
-        "pic1alt": "Matt Picture 1"
-    },
-    {
-        "pic1": "assets/img/gallery/guyCuts/mike2.jpg",
-        "pic1alt": "Mike Picture 1"
-    },
-    {
-        "pic1" : "assets/img/gallery/longHair/kathyC1.jpg",
-        "pic1alt" : "Kathy C"
-    },
-    {
-        "pic1" : "assets/img/gallery/longHair/linda1.jpg",
-        "pic1alt" : "Linda"
-    },
-    {
-        "pic1" : "assets/img/gallery/longHair/vikki1.jpg",
-        "pic1alt" : "Vikki",
-        "pic2" : "assets/img/gallery/longHair/vikki2.jpg",
-        "pic2alt" : "Vikki",
-        "pic3" : "assets/img/gallery/longHair/vikki2.jpg",
-        "pic3alt" : "Vikki"
-    },{
-        "pic1": "assets/img/gallery/midLength/barbara1.jpg",
-        "pic2": "assets/img/gallery/midLength/barbara2.jpg",
-        "pic1alt": "Barbara's hair",
-        "pic2alt": "Barbara's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/bobby1.jpg",
-        "pic2": "assets/img/gallery/midLength/bobby2.jpg",
-        "pic1alt": "Bobby's hair",
-        "pic2alt": "Bobby's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/gaborMid1.jpg",
-        "pic2": "assets/img/gallery/midLength/gaborMid2.jpg",
-        "pic3": "assets/img/gallery/midLength/gaborMid3.jpg",
-        "pic1alt": "Gabor's hair",
-        "pic2alt": "Gabor's hair",
-        "pic3alt": "Gabor's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/janet1.jpg",
-        "pic2": "assets/img/gallery/midLength/janet2.jpg",
-        "pic1alt": "Janet's hair",
-        "pic2alt": "Janet's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/janice1.jpg",
-        "pic2": "assets/img/gallery/midLength/janice2.jpg",
-        "pic1alt": "Janice's hair",
-        "pic2alt": "Janice's hair"
-
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/kate1.jpg",
-        "pic2": "assets/img/gallery/midLength/kate2.jpg",
-        "pic1alt": "Kate's hair",
-        "pic2alt": "Kate's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/kathyN1.jpg",
-        "pic2": "assets/img/gallery/midLength/kathyN2.jpg",
-        "pic1alt": "Kathy's hair",
-        "pic2alt": "Kathy's hair"
-    },
-    {
-        "pic1": "assets/img/gallery/midLength/patty1.jpg",
-        "pic2": "assets/img/gallery/midLength/patty2.jpg",
-        "pic1alt": "Patty's hair",
-        "pic2alt": "Patty's hair"
-    },
+   
+    
     {
         "pic1": "assets/img/gallery/shortHair/ellenShort1.jpg",
         "pic2": "assets/img/gallery/shortHair/ellenShort2.jpg",
@@ -162,6 +58,74 @@
         "pic2alt": "Susan's short hair"
     },
     {
+        "pic1": "assets/img/gallery/midLength/barbara1.jpg",
+        "pic2": "assets/img/gallery/midLength/barbara2.jpg",
+        "pic1alt": "Barbara's hair",
+        "pic2alt": "Barbara's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/bobby1.jpg",
+        "pic2": "assets/img/gallery/midLength/bobby2.jpg",
+        "pic1alt": "Bobby's hair",
+        "pic2alt": "Bobby's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/gaborMid1.jpg",
+        "pic2": "assets/img/gallery/midLength/gaborMid2.jpg",
+        "pic3": "assets/img/gallery/midLength/gaborMid3.jpg",
+        "pic1alt": "Gabor's hair",
+        "pic2alt": "Gabor's hair",
+        "pic3alt": "Gabor's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/janet1.jpg",
+        "pic2": "assets/img/gallery/midLength/janet2.jpg",
+        "pic1alt": "Janet's hair",
+        "pic2alt": "Janet's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/janice1.jpg",
+        "pic2": "assets/img/gallery/midLength/janice2.jpg",
+        "pic1alt": "Janice's hair",
+        "pic2alt": "Janice's hair"
+
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/kate1.jpg",
+        "pic2": "assets/img/gallery/midLength/kate2.jpg",
+        "pic1alt": "Kate's hair",
+        "pic2alt": "Kate's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/kathyN1.jpg",
+        "pic2": "assets/img/gallery/midLength/kathyN2.jpg",
+        "pic1alt": "Kathy's hair",
+        "pic2alt": "Kathy's hair"
+    },
+    {
+        "pic1": "assets/img/gallery/midLength/patty1.jpg",
+        "pic2": "assets/img/gallery/midLength/patty2.jpg",
+        "pic1alt": "Patty's hair",
+        "pic2alt": "Patty's hair"
+    },
+    {
+        "pic1" : "assets/img/gallery/longHair/kathyC1.jpg",
+        "pic1alt" : "Kathy C"
+    },
+    {
+        "pic1" : "assets/img/gallery/longHair/linda1.jpg",
+        "pic1alt" : "Linda"
+    },
+    {
+        "pic1" : "assets/img/gallery/longHair/vikki1.jpg",
+        "pic1alt" : "Vikki",
+        "pic2" : "assets/img/gallery/longHair/vikki2.jpg",
+        "pic2alt" : "Vikki",
+        "pic3" : "assets/img/gallery/longHair/vikki2.jpg",
+        "pic3alt" : "Vikki"
+    },
+    
+    {
         "pic1": "assets/img/gallery/smoothingTreatment/cherylBefore.jpg",
         "pic2": "assets/img/gallery/smoothingTreatment/cherylAfter.jpg",
         "pic1alt": "Cheryl before smoothing treatment",
@@ -172,5 +136,44 @@
         "pic2": "assets/img/gallery/smoothingTreatment/tiffanyAfter.jpg",
         "pic1alt": "Tiffany before smoothing treatment",
         "pic2alt": "Tiffany after smoothing treatment"
+    }, {
+        "pic1": "assets/img/gallery/guyCuts/john1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/john2.jpg",
+        "pic3": "assets/img/gallery/guyCuts/john3.jpg",
+        "pic1alt": "John Picture 1",
+        "pic2alt": "John Picture 2",
+        "pic3alt": "John Picture 3"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/nathan1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/nathan2.jpg",
+        "pic3": "assets/img/gallery/guyCuts/nathan3.jpg",
+        "pic1alt": "Nathan Picture 1",
+        "pic2alt": "Nathan Picture 2",
+        "pic3alt": "Nathan Picture 3"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/paul1.jpg",
+        "pic2": "assets/img/gallery/guyCuts/paul2.jpg",
+        "pic1alt": "Paul Picture 1",
+        "pic2alt": "Paul Picture 2"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/bob.jpg",
+        "pic2": "assets/img/gallery/guyCuts/bob2.jpg",
+        "pic1alt": "Bob Picture 1",
+        "pic2alt": "Bob Picture 2"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/james1.jpg",
+        "pic1alt": "James Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/matt.jpg",
+        "pic1alt": "Matt Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/mike2.jpg",
+        "pic1alt": "Mike Picture 1"
     }
 ]
