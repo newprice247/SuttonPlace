@@ -44,10 +44,10 @@
         "pic2alt": "Pat's short hair"
     },
     {
-        "rita1": "assets/img/gallery/shortHair/rita1.jpg",
-        "rita2": "assets/img/gallery/shortHair/rita2.jpg",
-        "rita1alt": "Rita's short hair",
-        "rita2alt": "Rita's short hair"
+        "pic1": "assets/img/gallery/shortHair/rita1.jpg",
+        "pic2": "assets/img/gallery/shortHair/rita2.jpg",
+        "pic1alt": "Rita's short hair",
+        "pic2alt": "Rita's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/susan1.jpg",

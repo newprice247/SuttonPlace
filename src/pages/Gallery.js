@@ -107,7 +107,9 @@ const Gallery = () => {
                     style={{ height: '100vh', width: '80%', margin: '0em auto' }}
                 >
                     <h4>Filter by Hair Category:</h4>
-                    <div className="d-flex justify-content-center mb-3"  id='swiperScroll'>
+                    <div 
+                    className="d-flex justify-content-center mb-3 flex-wrap align-items-center"  
+                    id='swiperScroll'>
                         <button
                             id='allHairButton'
                             onClick={() => {
