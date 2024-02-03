@@ -143,7 +143,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <a
-                    href={process.env.PUBLIC_URL + '/contact'}
+                    href={process.env.PUBLIC_URL + '/contacts'}
                     >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
