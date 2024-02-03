@@ -71,7 +71,7 @@ export default function App() {
                             e.target.style.filter = 'none';
                             setTimeout(() => {
                                 window.location.href = '/about';
-                            }, 500);
+                            }, 1000);
 
                         }}
                     >
@@ -107,7 +107,7 @@ export default function App() {
                                 e.target.style.filter = 'none';
                                 setTimeout(() => {
                                     window.location.href = '/about';
-                                }, 500);
+                                }, 1000);
                             }}
                         >
                             <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
@@ -141,7 +141,7 @@ export default function App() {
                                 e.target.style.filter = 'none';
                                 setTimeout(() => {
                                     window.location.href = '/about';
-                                }, 500);
+                                }, 1000);
                             }}
                         >
                             <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
@@ -175,7 +175,7 @@ export default function App() {
                                 e.target.style.filter = 'none';
                                 setTimeout(() => {
                                     window.location.href = '/about';
-                                }, 500);
+                                }, 1000);
                             }}
                         >
                             <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
@@ -209,7 +209,7 @@ export default function App() {
                                 e.target.style.filter = 'none';
                                 setTimeout(() => {
                                     window.location.href = '/about';
-                                }, 500);
+                                }, 1000);
                             }}
                         >
                             <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
