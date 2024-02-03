@@ -41,15 +41,19 @@ export default function App() {
 
                 }}
                 breakpoints={{
-                    // For smaller devices, show only one slide per view
-                    900: {
+                    
+                    700: {
                         slidesPerView: 3,
                     },
                 }}
             >
                 <SwiperSlide>
+                    <a
+                    href={process.env.PUBLIC_URL + '/about'}
+                    >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        
                         style={{
                             backgroundImage: `url(assets/img/gallery/suttonWorking.jpg)`,
                             backgroundSize: 'cover',
@@ -73,10 +77,15 @@ export default function App() {
                             About
                         </p>
                     </div>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <a
+                    href={process.env.PUBLIC_URL + '/services'}
+                    >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        href={process.env.PUBLIC_URL + '/services'}
                         style={{
                             backgroundImage: `url(assets/img/bg/goldTools.jpg)`,
                             backgroundSize: 'cover',
@@ -99,10 +108,15 @@ export default function App() {
                             Services
                         </p>
                     </div>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <a
+                    href={process.env.PUBLIC_URL + '/gallery'}
+                    >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        href={process.env.PUBLIC_URL + '/contact'}
                         style={{
                             backgroundImage: `url(assets/img/bg/chair.jpg)`,
                             backgroundSize: 'cover',
@@ -125,10 +139,15 @@ export default function App() {
                             Gallery
                         </p>
                     </div>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <a
+                    href={process.env.PUBLIC_URL + '/contact'}
+                    >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        href={process.env.PUBLIC_URL + '/contact'}
                         style={{
                             backgroundImage: `url(assets/img/bg/phone.jpg)`,
                             backgroundSize: 'cover',
@@ -151,10 +170,15 @@ export default function App() {
                             Contact
                         </p>
                     </div>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide>
+                    <a
+                    href={process.env.PUBLIC_URL + '/testimonials'}
+                    >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        href={process.env.PUBLIC_URL + '/testimonials'}
                         style={{
                             backgroundImage: `url(assets/img/bg/testimonials.jpg)`,
                             backgroundSize: 'cover',
@@ -177,6 +201,7 @@ export default function App() {
                             Testimonials
                         </p>
                     </div>
+                    </a>
                 </SwiperSlide>
             </Swiper >
         </>
