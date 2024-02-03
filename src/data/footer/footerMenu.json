@@ -1,8 +1,39 @@
 [
     {
         "id": "1",
-        "title": "Facebook",
-        "link": "https://www.facebook.com/suttonplacehairsalon/",
-        "icon": "fab fa-facebook-f"
+        "title": "mastercard",
+        "link": "https://www.mastercard.com/",
+        "icon": "assets/img/svg/mastercard.svg"
+    },
+    {
+        "id": "2",
+        "title": "visa",
+        "link": "https://www.visa.com/",
+        "icon": "assets/img/svg/visa.svg"
+    },
+    {
+        "id": "3",
+        "title": "american express",
+        "link": "https://www.americanexpress.com/",
+        "icon": "assets/img/svg/american-express.svg"
+    },
+    {
+        "id": "4",
+        "title": "discover",
+        "link": "https://www.discover.com/",
+        "icon": "assets/img/svg/discover.svg"
+    },
+    {
+        "id": "5",
+        "title": "money",
+        "link": "https://www.money.com/",
+        "icon": "assets/img/svg/money.svg"
+    },
+    {
+        "id": "6",
+        "title": "check",
+        "link": "https://www.check.com/",
+        "icon": "assets/img/svg/check.svg"
     }
 ]
+

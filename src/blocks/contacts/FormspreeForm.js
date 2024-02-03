@@ -9,7 +9,7 @@ export default function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <p>Send Me an Email!</p>
+      <p>Have any questions or want to book an appointment? </p>
       <label htmlFor="email">
         Your Email Address
       </label>

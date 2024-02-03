@@ -9,7 +9,9 @@ const FooterMenu = () => {
                     return (
                         <li key={ key } className="nav-item">
                             <a title={ item.title } href={ item.link }>
-                                <i className={ item.icon }></i>
+                                <img src={ item.icon } alt={ item.title } 
+                                style={ { width: '3em', height: '3em' } }
+                                />
                             </a>
                         </li>
                     );

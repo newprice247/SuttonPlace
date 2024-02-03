@@ -47,9 +47,6 @@ const Home = () => {
                         <div
                             style={{ height: '70vh', width: '70%', margin: '5em auto' }}
                         >
-                            <h2
-                            className='text-center mt-5 mb-5'
-                            >Location</h2>
                             <GoogleMaps />
                         </div>
                         <div className="spacer p-top-lg p-bottom-lg text-center">

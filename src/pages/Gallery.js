@@ -1,21 +1,22 @@
 import React, { Fragment } from 'react';
 import { useState, useEffect } from 'react';
 import MetaTags from 'react-meta-tags';
+
 import galleryPics from '../data/gallery/galleryPics';
 import menPics from '../data/gallery/menPics';
 import longPics from '../data/gallery/longPics';
 import midPics from '../data/gallery/midPics';
 import shortPics from '../data/gallery/shortPics';
 import smoothingPics from '../data/gallery/smoothingPics';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Loading from '../blocks/loading/Loading';
 import Header from '../blocks/header/Header';
 import Footer from '../blocks/footer/Footer';
-
 import PageTitleGallery from '../blocks/page-title/PageTitleGallery';
 import GalleryHome from '../blocks/gallery/GalleryHome';
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Mousewheel, EffectCoverflow, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -30,51 +31,20 @@ const Gallery = () => {
     document.body.classList.add('page');
     const [activeButton, setActiveButton] = useState('allHairButton');
 
+    const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
+
     useEffect(() => {
-        const allHairButton = document.getElementById('allHairButton');
-        const menHairButton = document.getElementById('menHairButton');
-        const longHairButton = document.getElementById('longHairButton');
-        const midHairButton = document.getElementById('midHairButton');
-        const shortHairButton = document.getElementById('shortHairButton');
-        const smoothingButton = document.getElementById('smoothingButton');
+        buttonArray.filter(button => {
+            if (button === activeButton) {
+                document.getElementById(button).classList.add('activeGalleryButton');
+            } else {
+                document.getElementById(button).classList.remove('activeGalleryButton');
+            }
+        });
+    }, [activeButton]);
 
-        if (activeButton === 'allHairButton') {
-            allHairButton.classList.add('activeGalleryButton');
-            menHairButton.classList.remove('activeGalleryButton');
-            longHairButton.classList.remove('activeGalleryButton');
-            midHairButton.classList.remove('activeGalleryButton');
-            shortHairButton.classList.remove('activeGalleryButton');
-            smoothingButton.classList.remove('activeGalleryButton');
-        } else if (activeButton === 'menHairButton') {
-            menHairButton.classList.add('activeGalleryButton');
-            allHairButton.classList.remove('activeGalleryButton');
-            longHairButton.classList.remove('activeGalleryButton');
-            midHairButton.classList.remove('activeGalleryButton');
-            shortHairButton.classList.remove('activeGalleryButton');
-            smoothingButton.classList.remove('activeGalleryButton');
-        } else if (activeButton === 'midHairButton') {
-            midHairButton.classList.add('activeGalleryButton');
-            allHairButton.classList.remove('activeGalleryButton');
-            menHairButton.classList.remove('activeGalleryButton');
-            longHairButton.classList.remove('activeGalleryButton');
-            shortHairButton.classList.remove('activeGalleryButton');
-            smoothingButton.classList.remove('activeGalleryButton');
-        } else if (activeButton === 'shortHairButton') {
-            shortHairButton.classList.add('activeGalleryButton');
-            allHairButton.classList.remove('activeGalleryButton');
-            menHairButton.classList.remove('activeGalleryButton');
-            longHairButton.classList.remove('activeGalleryButton');
-            midHairButton.classList.remove('activeGalleryButton');
-            smoothingButton.classList.remove('activeGalleryButton');
-        } else if (activeButton === 'longHairButton') {
-            longHairButton.classList.add('activeGalleryButton');
-            allHairButton.classList.remove('activeGalleryButton');
-            menHairButton.classList.remove('activeGalleryButton');
-            midHairButton.classList.remove('activeGalleryButton');
-            shortHairButton.classList.remove('activeGalleryButton');
-            smoothingButton.classList.remove('activeGalleryButton');
-        }
-
+    useEffect(() => {
+        console.log(activeButton);
     }, [activeButton]);
 
     const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
@@ -103,13 +73,13 @@ const Gallery = () => {
                 <PageTitleGallery />
 
 
-                <section id="page-content" className="spacer p-top-xl text-center m-bottom-lg"
-                    style={{ height: '100vh', width: '80%', margin: '0em auto' }}
+                <section id="page-content" className="spacer p-top-xl text-center m-bottom-xl"
+                    style={{ height: '100vh', width: '80%', margin: '1em auto' }}
                 >
                     <h4>Filter by Hair Category:</h4>
                     <div
                         className="d-flex justify-content-center mb-3 flex-wrap align-items-center"
-                        id='swiperScroll'>
+                    >
                         <button
                             id='allHairButton'
                             onClick={() => {
@@ -182,11 +152,18 @@ const Gallery = () => {
 
 
                     </div>
-                    <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>
+                    <div
+                        id='swiperScroll'
+                        className='flex-row d-flex justify-content-center align-items-center'
+                    >
+                        <img src='assets/img/svg/four-arrows.svg' alt='swipe arrows' style={{ width: '3em', margin: '1em' }} />
+                        <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>
+                    </div>
+
 
                     <Swiper
 
-                        className="mySwiper swiper-v border rounded "
+                        className="mySwiper swiper-v border rounded"
                         direction='vertical'
                         spaceBetween={50}
                         pagination={{
