@@ -85,7 +85,7 @@ export default function App() {
                     >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
-                        href={process.env.PUBLIC_URL + '/services'}
+                        
                         style={{
                             backgroundImage: `url(assets/img/bg/goldTools.jpg)`,
                             backgroundSize: 'cover',
@@ -116,7 +116,7 @@ export default function App() {
                     >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
-                        href={process.env.PUBLIC_URL + '/contact'}
+                        
                         style={{
                             backgroundImage: `url(assets/img/bg/chair.jpg)`,
                             backgroundSize: 'cover',
@@ -147,7 +147,7 @@ export default function App() {
                     >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
-                        href={process.env.PUBLIC_URL + '/contact'}
+                        
                         style={{
                             backgroundImage: `url(assets/img/bg/phone.jpg)`,
                             backgroundSize: 'cover',
@@ -178,7 +178,7 @@ export default function App() {
                     >
                     <div
                         className='h-100 w-100 d-flex align-items-center justify-content-center'
-                        href={process.env.PUBLIC_URL + '/testimonials'}
+                        
                         style={{
                             backgroundImage: `url(assets/img/bg/testimonials.jpg)`,
                             backgroundSize: 'cover',
