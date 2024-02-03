@@ -38,6 +38,19 @@ class ServicesHome extends Component {
             },
             spaceBetween: 0,
             slidesPerView: 'auto',
+            grabCursor: false,
+            thumbs: {
+                swiper: {
+                    el: '.adv-slider-services .adv-swiper-container-thumbs',
+                    spaceBetween: 0,
+                    slidesPerView: 'auto',
+                    grabCursor: false,
+                    navigation: {
+                        nextEl: '.adv-2-swiper-button-next',
+                        prevEl: '.adv-2-swiper-button-prev'
+                    }
+                }
+            }
         } );
     }
 
