@@ -10,35 +10,36 @@ import 'swiper/css/pagination';
 import '../../styles.css';
 
 
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 export default function App() {
     return (
         <>
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap')
+            </style>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={0}
-                pagination={{
-                    clickable: true,
-                }}
+                
                 navigation={{
                     true: true,
-                     
+
                 }}
-                
+
                 grabCursor={true}
-                modules={[Pagination, Navigation]}
+                modules={[ Navigation]}
                 className="mySwiper"
-                style={{ 
+                style={{
                     width: '100%',
-                     height: '35rem',
-                     "--swiper-pagination-color": "#ffffff",
-                     "--swiper-navigation-color": "#ffffff",
-                        "--swiper-navigation-size": "2rem",
-                        "--swiper-pagination-size": "1.5rem",
-                        "--swiper-pagination-bullet-size": ".8rem",
-                    
-                    }}
+                    height: '35rem',
+                    "--swiper-pagination-color": "#ffffff",
+                    "--swiper-navigation-color": "#ffffff",
+                    "--swiper-navigation-size": "2rem",
+                    "--swiper-pagination-size": "1.5rem",
+                    "--swiper-pagination-bullet-size": ".8rem",
+
+                }}
                 breakpoints={{
                     // For smaller devices, show only one slide per view
                     900: {
@@ -58,15 +59,17 @@ export default function App() {
                             transition: 'filter 0.5s ease-in-out',
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.filter = 'none'; 
+                            e.target.style.filter = 'none';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';}}
+                            e.target.style.filter = 'grayscale(100%)';
+                        }}
                         onClick={(e) => {
-                            e.target.style.filter = 'none';}}
+                            e.target.style.filter = 'none';
+                        }}
                     >
-                        <p className='text-white text-center' 
-                        style={{ fontSize: '3rem', fontFamily: 'Lobster'}}>
+                        <p className='text-white text-center merriweather-light'
+                            style={{ fontSize: '3rem' }}>
                             About
                         </p>
                     </div>
@@ -83,14 +86,16 @@ export default function App() {
                             transition: 'filter 0.5s ease-in-out',
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.filter = 'none'; 
+                            e.target.style.filter = 'none';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';}}
+                            e.target.style.filter = 'grayscale(100%)';
+                        }}
                         onClick={(e) => {
-                            e.target.style.filter = 'none';}}
+                            e.target.style.filter = 'none';
+                        }}
                     >
-                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                        <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
                             Services
                         </p>
                     </div>
@@ -107,14 +112,16 @@ export default function App() {
                             transition: 'filter 0.5s ease-in-out',
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.filter = 'none'; 
+                            e.target.style.filter = 'none';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';}}
+                            e.target.style.filter = 'grayscale(100%)';
+                        }}
                         onClick={(e) => {
-                            e.target.style.filter = 'none';}}
+                            e.target.style.filter = 'none';
+                        }}
                     >
-                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                        <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
                             Gallery
                         </p>
                     </div>
@@ -131,14 +138,16 @@ export default function App() {
                             transition: 'filter 0.5s ease-in-out',
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.filter = 'none'; 
+                            e.target.style.filter = 'none';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';}}
+                            e.target.style.filter = 'grayscale(100%)';
+                        }}
                         onClick={(e) => {
-                            e.target.style.filter = 'none';}}
+                            e.target.style.filter = 'none';
+                        }}
                     >
-                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                        <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
                             Contact
                         </p>
                     </div>
@@ -155,14 +164,16 @@ export default function App() {
                             transition: 'filter 0.5s ease-in-out',
                         }}
                         onMouseEnter={(e) => {
-                            e.target.style.filter = 'none'; 
+                            e.target.style.filter = 'none';
                         }}
                         onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';}}
+                            e.target.style.filter = 'grayscale(100%)';
+                        }}
                         onClick={(e) => {
-                            e.target.style.filter = 'none';}}
+                            e.target.style.filter = 'none';
+                        }}
                     >
-                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                        <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
                             Testimonials
                         </p>
                     </div>
