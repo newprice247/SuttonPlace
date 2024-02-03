@@ -1,166 +1,173 @@
-import React, { Component } from 'react';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-import SwiperCore from 'swiper';
-import { Navigation } from 'swiper/modules';
 
-SwiperCore.use( [ Navigation ] );
+import React from 'react';
 
-class ServicesHome extends Component {
-    componentDidMount() {
-        new Swiper( '.adv-slider-services .adv-swiper-container', {
-            // ADV swiper
-            noSwipingClass: 'adv-swiper-no-swiping',
-            containerModifierClass: 'adv-swiper-container-',
-            slideClass: 'adv-swiper-slide',
-            slideBlankClass: 'adv-swiper-slide-invisible-blank',
-            slideActiveClass: 'adv-swiper-slide-active',
-            slideDuplicateActiveClass: 'adv-swiper-slide-duplicate-active',
-            slideVisibleClass: 'adv-swiper-slide-visible',
-            slideDuplicateClass: 'adv-swiper-slide-duplicate',
-            slideNextClass: 'adv-swiper-slide-next',
-            slideDuplicateNextClass: 'adv-swiper-slide-duplicate-next',
-            slidePrevClass: 'adv-swiper-slide-prev',
-            slideDuplicatePrevClass: 'adv-swiper-slide-duplicate-prev',
-            wrapperClass: 'adv-swiper-wrapper',
-            pagination: {
-                el: '.adv-swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            },
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-            navigation: {
-                disabledClass: 'adv-swiper-button-disabled',
-                hiddenClass: 'adv-swiper-button-hidden',
-                lockClass: 'adv-swiper-button-lock',
-                nextEl: '.adv-2-swiper-button-next',
-                prevEl: '.adv-2-swiper-button-prev'
-            },
-            spaceBetween: 0,
-            slidesPerView: 'auto',
-            grabCursor: false,
-            thumbs: {
-                swiper: {
-                    el: '.adv-slider-services .adv-swiper-container-thumbs',
-                    spaceBetween: 0,
-                    slidesPerView: 'auto',
-                    grabCursor: false,
-                    navigation: {
-                        nextEl: '.adv-2-swiper-button-next',
-                        prevEl: '.adv-2-swiper-button-prev'
-                    }
-                }
-            }
-        } );
-    }
 
-    render() {
-        return (
-            <section id="services" className="block">
-                <div className="adv-slider-services">
-                    <div className="adv-swiper-container">
-                        <div className="adv-swiper-wrapper services-items clearfix">
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-                        <a title="Hands & Feets" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/about" }>
-                                <div className="services-item-content">
-                                    <h3 className="services-item-t-head">About</h3>
+import '../../styles.css';
 
-                                    <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
-                                </div>
 
-                                <div className="img object-fit">
-                                    <div className="object-fit-cover">
-                                        <img src="assets/img/gallery/suttonWorking.jpg" alt="About" />
-                                    </div>
-                                </div>
+import { Pagination, Navigation } from 'swiper/modules';
 
-                                <div className="img-bg-color"></div>
-                            </a>
-                            
-                            <a title="Face & Body" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/services" }>
-                                <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Services</h3>
-
-                                    <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
-                                </div>
-
-                                <div className="img object-fit">
-                                    <div className="object-fit-cover">
-                                        <img src="assets/img/bg/goldTools.jpg" alt="Services" />
-                                    </div>
-                                </div>
-
-                                <div className="img-bg-color"></div>
-                            </a>
-
-                            <a title="Hair Treatments" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/gallery" }>
-                                <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Gallery</h3>
-
-                                    <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
-                                </div>
-
-                                <div className="img object-fit">
-                                    <div className="object-fit-cover">
-                                        <img src="assets/img/bg/chair.jpg" alt="Hair Treatments" />
-                                    </div>
-                                </div>
-
-                                <div className="img-bg-color"></div>
-                            </a>
-
-                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/contacts" }>
-                                <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Contact</h3>
-
-                                    <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
-                                </div>
-
-                                <div className="img object-fit">
-                                    <div className="object-fit-cover">
-                                        <img src="assets/img/bg/phone.jpg" alt="Haircuts for Men" />
-                                    </div>
-                                </div>
-
-                                <div className="img-bg-color"></div>
-                            </a>
-
-                            <a title="Haircuts for Men" className="adv-swiper-slide services-item" href={ process.env.PUBLIC_URL + "/testimonials" }>
-                                <div className="services-item-content">
-                                    <h3 className="services-item-t-head">Testimonials</h3>
-
-                                    <span className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto link-no-space">read more</span>
-                                </div>
-
-                                <div className="img object-fit">
-                                    <div className="object-fit-cover">
-                                        <img src="assets/img/bg/testimonials.jpg" alt="Haircuts for Men" />
-                                    </div>
-                                </div>
-
-                                <div className="img-bg-color"></div>
-                            </a>
-                        </div>
-
-                        <div className="adv-2-swiper-button-prev">
-                            <span>
-                                <span 
-                                className="btn btn-lg btn-before-dot btn-link border-0 p-0 min-w-auto"
-                                >Previous</span>
-                            </span>
-                        </div>
-
-                        <div className="adv-2-swiper-button-next">
-                            <span>
-                                <span className="btn btn-lg btn-after-dot btn-link border-0 p-0 min-w-auto"
-                                >Next</span>
-                            </span>
-                        </div>
+export default function App() {
+    return (
+        <>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={0}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={{
+                    true: true,
+                     
+                }}
+                
+                grabCursor={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
+                style={{ 
+                    width: '100%',
+                     height: '35rem',
+                     "--swiper-pagination-color": "#ffffff",
+                     "--swiper-navigation-color": "#ffffff",
+                        "--swiper-navigation-size": "2rem",
+                        "--swiper-pagination-size": "1.5rem",
+                        "--swiper-pagination-bullet-size": ".8rem",
+                    
+                    }}
+                breakpoints={{
+                    // For smaller devices, show only one slide per view
+                    900: {
+                        slidesPerView: 3,
+                    },
+                }}
+            >
+                <SwiperSlide>
+                    <div
+                        className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        style={{
+                            backgroundImage: `url(assets/img/gallery/suttonWorking.jpg)`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            filter: 'grayscale(100%)',
+                            transition: 'filter 0.5s ease-in-out',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.filter = 'none'; 
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.filter = 'grayscale(100%)';}}
+                        onClick={(e) => {
+                            e.target.style.filter = 'none';}}
+                    >
+                        <p className='text-white text-center' 
+                        style={{ fontSize: '3rem', fontFamily: 'Lobster'}}>
+                            About
+                        </p>
                     </div>
-                </div>
-            </section>
-        );
-    }
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        style={{
+                            backgroundImage: `url(assets/img/bg/goldTools.jpg)`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            filter: 'grayscale(100%)',
+                            transition: 'filter 0.5s ease-in-out',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.filter = 'none'; 
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.filter = 'grayscale(100%)';}}
+                        onClick={(e) => {
+                            e.target.style.filter = 'none';}}
+                    >
+                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                            Services
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        style={{
+                            backgroundImage: `url(assets/img/bg/chair.jpg)`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            filter: 'grayscale(100%)',
+                            transition: 'filter 0.5s ease-in-out',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.filter = 'none'; 
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.filter = 'grayscale(100%)';}}
+                        onClick={(e) => {
+                            e.target.style.filter = 'none';}}
+                    >
+                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                            Gallery
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        style={{
+                            backgroundImage: `url(assets/img/bg/phone.jpg)`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            filter: 'grayscale(100%)',
+                            transition: 'filter 0.5s ease-in-out',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.filter = 'none'; 
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.filter = 'grayscale(100%)';}}
+                        onClick={(e) => {
+                            e.target.style.filter = 'none';}}
+                    >
+                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                            Contact
+                        </p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div
+                        className='h-100 w-100 d-flex align-items-center justify-content-center'
+                        style={{
+                            backgroundImage: `url(assets/img/bg/testimonials.jpg)`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                            filter: 'grayscale(100%)',
+                            transition: 'filter 0.5s ease-in-out',
+                        }}
+                        onMouseEnter={(e) => {
+                            e.target.style.filter = 'none'; 
+                        }}
+                        onMouseLeave={(e) => {
+                            e.target.style.filter = 'grayscale(100%)';}}
+                        onClick={(e) => {
+                            e.target.style.filter = 'none';}}
+                    >
+                        <p className='text-white text-center' style={{ fontSize: '3rem', fontFamily: 'Lobster' }}>
+                            Testimonials
+                        </p>
+                    </div>
+                </SwiperSlide>
+            </Swiper >
+        </>
+    );
 }
-
-export default ServicesHome;
