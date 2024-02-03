@@ -83,9 +83,7 @@ export default function App() {
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a
-                        href={process.env.PUBLIC_URL + '/services'}
-                    >
+                    
                         <div
                             className='h-100 w-100 d-flex align-items-center justify-content-center'
 
@@ -114,12 +112,10 @@ export default function App() {
                                 Services
                             </p>
                         </div>
-                    </a>
+                    
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a
-                        href={process.env.PUBLIC_URL + '/gallery'}
-                    >
+                    
                         <div
                             className='h-100 w-100 d-flex align-items-center justify-content-center'
 
@@ -148,12 +144,10 @@ export default function App() {
                                 Gallery
                             </p>
                         </div>
-                    </a>
+               
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a
-                        href={process.env.PUBLIC_URL + '/contacts'}
-                    >
+                    
                         <div
                             className='h-100 w-100 d-flex align-items-center justify-content-center'
 
@@ -182,12 +176,10 @@ export default function App() {
                                 Contact
                             </p>
                         </div>
-                    </a>
+                    
                 </SwiperSlide>
                 <SwiperSlide>
-                    <a
-                        href={process.env.PUBLIC_URL + '/testimonials'}
-                    >
+                    
                         <div
                             className='h-100 w-100 d-flex align-items-center justify-content-center'
 
@@ -216,7 +208,7 @@ export default function App() {
                                 Testimonials
                             </p>
                         </div>
-                    </a>
+                    
                 </SwiperSlide>
             </Swiper >
         </>
