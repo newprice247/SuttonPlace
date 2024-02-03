@@ -25,22 +25,23 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/effect-cards';
 
 import '../styles.css';
-
+const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
 
 const Gallery = () => {
     document.body.classList.add('page');
     const [activeButton, setActiveButton] = useState('allHairButton');
 
-    const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
+    
 
     useEffect(() => {
-        buttonArray.filter(button => {
+        buttonArray.forEach(button => {
             if (button === activeButton) {
                 document.getElementById(button).classList.add('activeGalleryButton');
             } else {
                 document.getElementById(button).classList.remove('activeGalleryButton');
             }
-        });
+        }
+        );
     }, [activeButton]);
 
     useEffect(() => {
