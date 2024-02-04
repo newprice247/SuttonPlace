@@ -187,7 +187,7 @@ export default function TestimonialPage() {
                     <label htmlFor="name">Name</label>
                     <input
                       type="text"
-                      className="form-control mb-3"
+                      className="form-control mb-3 rounded"
                       id="name"
                       name="name"
                       placeholder="Your name" />
@@ -198,10 +198,10 @@ export default function TestimonialPage() {
                     />
                     <label htmlFor="testimonial">Testimonial</label>
                     <textarea
-                      className="form-control mb-3"
+                      className="form-control mb-3 rounded"
                       id="message"
                       rows="3"
-                      placeholder="Tell us about your visit"
+                      placeholder="Your testimonial here"
                       name="message"
                     />
                     <ValidationError
@@ -214,7 +214,7 @@ export default function TestimonialPage() {
                       id="email"
                       type="email"
                       name="email"
-                      className='form-control'
+                      className='form-control rounded'
                       placeholder="Your email address"
                     />
                     <ValidationError

@@ -12,6 +12,41 @@ import '../../styles.css';
 
 import { Navigation } from 'swiper/modules';
 
+function SwiperSlideContent({ img, title, href }) {
+    return (
+        <div
+            className='h-100 w-100 d-flex align-items-center justify-content-center'
+
+            style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                filter: 'grayscale(100%)',
+                transition: 'filter 0.3s ease-in-out',
+            }}
+            onMouseEnter={(e) => {
+                e.target.style.filter = 'none';
+            }}
+            onMouseLeave={(e) => {
+                e.target.style.filter = 'grayscale(100%)';
+            }}
+            onClick={(e) => {
+                e.target.style.filter = 'none';
+                e.target.style.transform = 'scale(1.05)';
+                e.target.style.transition = 'transform 0.3s ease-in-out';
+                setTimeout(() => {
+                    window.location.href = `/${href}`;
+                }, 700);
+            }}
+        >
+            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
+                {title}
+            </p>
+        </div>
+    );
+}
+
 export default function App() {
     return (
         <>
@@ -49,165 +84,27 @@ export default function App() {
             >
                 <SwiperSlide>
 
-                    <div
-                        className='h-100 w-100 d-flex align-items-center justify-content-center'
-
-                        style={{
-                            backgroundImage: `url(assets/img/gallery/suttonWorking.jpg)`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            backgroundRepeat: 'no-repeat',
-                            filter: 'grayscale(100%)',
-                            transition: 'filter 0.5s ease-in-out',
-                        }}
-                        onMouseEnter={(e) => {
-                            e.target.style.filter = 'none';
-                        }}
-                        onMouseLeave={(e) => {
-                            e.target.style.filter = 'grayscale(100%)';
-                        }}
-                        onClick={(e) => {
-
-                            e.target.style.filter = 'none';
-                            setTimeout(() => {
-                                window.location.href = '/about';
-                            }, 1000);
-
-                        }}
-                    >
-                        <p className='text-white text-center merriweather-light'
-                            style={{ fontSize: '3rem' }}>
-                            About
-                        </p>
-                    </div>
+                    <SwiperSlideContent img='assets/img/gallery/suttonWorking.jpg' title='About' href='about' />
 
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <div
-                            className='h-100 w-100 d-flex align-items-center justify-content-center'
-
-                            style={{
-                                backgroundImage: `url(assets/img/bg/goldTools.jpg)`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                filter: 'grayscale(100%)',
-                                transition: 'filter 0.5s ease-in-out',
-                            }}
-                            onMouseEnter={(e) => {
-                                e.target.style.filter = 'none';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.filter = 'grayscale(100%)';
-                            }}
-                            onClick={(e) => {
-                                e.target.style.filter = 'none';
-                                setTimeout(() => {
-                                    window.location.href = '/about';
-                                }, 1000);
-                            }}
-                        >
-                            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
-                                Services
-                            </p>
-                        </div>
+                        <SwiperSlideContent img='assets/img/bg/goldTools.jpg' title='Services' href='services' />
                     
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <div
-                            className='h-100 w-100 d-flex align-items-center justify-content-center'
-
-                            style={{
-                                backgroundImage: `url(assets/img/bg/chair.jpg)`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                filter: 'grayscale(100%)',
-                                transition: 'filter 0.5s ease-in-out',
-                            }}
-                            onMouseEnter={(e) => {
-                                e.target.style.filter = 'none';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.filter = 'grayscale(100%)';
-                            }}
-                            onClick={(e) => {
-                                e.target.style.filter = 'none';
-                                setTimeout(() => {
-                                    window.location.href = '/about';
-                                }, 1000);
-                            }}
-                        >
-                            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
-                                Gallery
-                            </p>
-                        </div>
+                        <SwiperSlideContent img='assets/img/bg/chair.jpg' title='Gallery' href='gallery' />
                
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <div
-                            className='h-100 w-100 d-flex align-items-center justify-content-center'
-
-                            style={{
-                                backgroundImage: `url(assets/img/bg/phone.jpg)`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                filter: 'grayscale(100%)',
-                                transition: 'filter 0.5s ease-in-out',
-                            }}
-                            onMouseEnter={(e) => {
-                                e.target.style.filter = 'none';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.filter = 'grayscale(100%)';
-                            }}
-                            onClick={(e) => {
-                                e.target.style.filter = 'none';
-                                setTimeout(() => {
-                                    window.location.href = '/about';
-                                }, 1000);
-                            }}
-                        >
-                            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
-                                Contact
-                            </p>
-                        </div>
+                        <SwiperSlideContent img='assets/img/bg/phone.jpg' title='Contact' href='contacts' />
                     
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <div
-                            className='h-100 w-100 d-flex align-items-center justify-content-center'
-
-                            style={{
-                                backgroundImage: `url(assets/img/bg/testimonials.jpg)`,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                filter: 'grayscale(100%)',
-                                transition: 'filter 0.5s ease-in-out',
-                            }}
-                            onMouseEnter={(e) => {
-                                e.target.style.filter = 'none';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.filter = 'grayscale(100%)';
-                            }}
-                            onClick={(e) => {
-                                e.target.style.filter = 'none';
-                                setTimeout(() => {
-                                    window.location.href = '/about';
-                                }, 1000);
-                            }}
-                        >
-                            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
-                                Testimonials
-                            </p>
-                        </div>
+                        <SwiperSlideContent img='assets/img/bg/testimonials.jpg' title='Testimonials' href='testimonials' />
                     
                 </SwiperSlide>
             </Swiper >

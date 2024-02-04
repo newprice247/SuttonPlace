@@ -17,7 +17,8 @@ export default function ContactForm() {
         id="email"
         type="email"
         name="email"
-        className='form-control'
+        className='form-control rounded'
+        placeholder='example@email.com'
       />
       <ValidationError
         prefix="Email"
@@ -33,7 +34,8 @@ export default function ContactForm() {
       <textarea
         id="message"
         name="message"
-        className='form-control'
+        className='form-control rounded'
+        placeholder='Request an appointment or just say hi!'
       />
       <ValidationError
         prefix="Message"
@@ -43,7 +45,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className='btn btn-dark btn-block mt-3'
+        className='btn btn-dark btn-block mt-3 rounded'
       >
         Submit
       </button>
