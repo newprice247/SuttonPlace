@@ -77,7 +77,7 @@ const Gallery = () => {
                 <section id="page-content" className="spacer p-top-xl text-center m-bottom-xl"
                     style={{ height: '100vh', width: '80%', margin: '1em auto' }}
                 >
-                    <h4>Filter by Hair Category:</h4>
+                    <h4>Filter by Category:</h4>
                     <div
                         className="d-flex justify-content-center mb-3 flex-wrap align-items-center"
                     >
