@@ -1,18 +1,22 @@
 [
     {
-        "pic1" : "assets/img/gallery/longHair/kathyC1.jpg",
-        "pic1alt" : "Kathy C"
+        "pic1": "assets/img/gallery/longHair/vikki1.jpg",
+        "pic1alt": "Vikki"
     },
     {
-        "pic1" : "assets/img/gallery/longHair/linda1.jpg",
-        "pic1alt" : "Linda"
+        "pic1": "assets/img/gallery/longHair/vikki2.jpg",
+        "pic1alt": "Vikki"
     },
     {
-        "pic1" : "assets/img/gallery/longHair/vikki1.jpg",
-        "pic1alt" : "Vikki",
-        "pic2" : "assets/img/gallery/longHair/vikki2.jpg",
-        "pic2alt" : "Vikki",
-        "pic3" : "assets/img/gallery/longHair/vikki2.jpg",
-        "pic3alt" : "Vikki"
+        "pic1": "assets/img/gallery/longHair/vikki3.jpg",
+        "pic1alt": "Vikki"
+    },
+    {
+        "pic1": "assets/img/gallery/longHair/kathyC1.jpg",
+        "pic1alt": "Kathy C"
+    },
+    {
+        "pic1": "assets/img/gallery/longHair/linda1.jpg",
+        "pic1alt": "Linda"
     }
 ]

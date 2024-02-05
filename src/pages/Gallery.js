@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import MetaTags from 'react-meta-tags';
 
-import galleryPics from '../data/gallery/galleryPics';
+// import galleryPics from '../data/gallery/galleryPics';
 import menPics from '../data/gallery/menPics';
 import longPics from '../data/gallery/longPics';
 import midPics from '../data/gallery/midPics';
@@ -16,8 +16,8 @@ import PageTitleGallery from '../blocks/page-title/PageTitleGallery';
 import GalleryHome from '../blocks/gallery/GalleryHome';
 
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Mousewheel, EffectCoverflow, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -25,30 +25,88 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/effect-cards';
 
 import '../styles.css';
-const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
+// import { func } from 'prop-types';
+// const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
+
+function SwiperContent(props) {
+    return (
+        <Swiper
+        slidesPerView={1}
+        spaceBetween={0}
+        navigation={{
+            true: true,
+
+        }}
+        grabCursor={true}
+        modules={[Navigation]}
+        className="mySwiper swiper-h spacer m-bottom-md"
+        style={{
+            width: '100%',
+            height: '38rem',
+            "--swiper-pagination-color": "#ffffff",
+            "--swiper-navigation-color": "#ffffff",
+            "--swiper-navigation-size": "3rem",
+            "--swiper-pagination-size": "1.5rem",
+            "--swiper-pagination-bullet-size": ".8rem",
+        }}
+        breakpoints={{
+
+            700: {
+                slidesPerView: 4,
+            },
+        }}
+    >
+        {props.children}
+    </Swiper>
+    );
+}
+
+function SwiperSlideContent({ img }) {
+    return (
+        <div
+            className='h-100 w-100 d-flex align-items-center justify-content-center'
+
+            style={{
+                backgroundImage: `url(${img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                transition: 'filter 0.3s ease-in-out',
+            }}
+            onClick={(e) => {
+                e.target.style.filter = 'none';
+                e.target.style.transform = 'scale(1.05)';
+                e.target.style.transition = 'transform 0.3s ease-in-out';
+                
+            }}
+        >
+        </div>
+    );
+}
+
 
 const Gallery = () => {
-    document.body.classList.add('page');
-    const [activeButton, setActiveButton] = useState('allHairButton');
+    // document.body.classList.add('page');
+    // const [activeButton, setActiveButton] = useState('allHairButton');
 
     
 
-    useEffect(() => {
-        buttonArray.forEach(button => {
-            if (button === activeButton) {
-                document.getElementById(button).classList.add('activeGalleryButton');
-            } else {
-                document.getElementById(button).classList.remove('activeGalleryButton');
-            }
-        }
-        );
-    }, [activeButton]);
+    // useEffect(() => {
+    //     buttonArray.forEach(button => {
+    //         if (button === activeButton) {
+    //             document.getElementById(button).classList.add('activeGalleryButton');
+    //         } else {
+    //             document.getElementById(button).classList.remove('activeGalleryButton');
+    //         }
+    //     }
+    //     );
+    // }, [activeButton]);
 
-    useEffect(() => {
-        console.log(activeButton);
-    }, [activeButton]);
+    // useEffect(() => {
+    //     console.log(activeButton);
+    // }, [activeButton]);
 
-    const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
+    // const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
 
     return (
         <Fragment>
@@ -74,11 +132,81 @@ const Gallery = () => {
                 <PageTitleGallery />
 
 
-                <section id="page-content" className="spacer p-top-xl text-center m-bottom-xl"
-                    style={{ height: '100vh', width: '80%', margin: '1em auto' }}
+                <section id="page-content" className="text-center"
+                    style={{ height: '100%', width: '80%', margin: '0em auto' }}
                 >
-                    <h4>Filter by Hair Category:</h4>
-                    <div
+                    <h3
+                    className='spacer m-top-lg'
+                    >Short Hair</h3>
+                    
+                    <SwiperContent
+                    children={
+                        shortPics.map((pic, index) => (
+                            <SwiperSlide>
+                              <SwiperSlideContent
+                                img={pic.pic1}
+                            />  
+                            </SwiperSlide>
+                            
+                        ))
+                    }
+                />
+                    <h3>Mid-Length Hair</h3>
+                    <SwiperContent
+                    children={
+                        midPics.map((pic, index) => (
+                            <SwiperSlide>
+                                <SwiperSlideContent
+                                    img={pic.pic1}
+                                />
+                            </SwiperSlide>
+                        ))
+                    }
+                />
+
+                    <h3>Long Hair</h3>
+                    <SwiperContent
+                    children={
+                        longPics.map((pic, index) => (
+                            <SwiperSlide>
+                                <SwiperSlideContent
+                                    img={pic.pic1}
+                                />
+                            </SwiperSlide>
+                        ))
+                    }
+                />
+                
+                    <h3>Smoothing Treatments</h3>
+                    <SwiperContent
+                    children={
+                        smoothingPics.map((pic, index) => (
+                            <SwiperSlide>
+                                <SwiperSlideContent
+                                    img={pic.pic1}
+                                />
+                            </SwiperSlide>
+                        ))
+                    }
+                />
+                    <h3>Men's Hair</h3>
+                    <SwiperContent
+                    children={
+                        menPics.map((pic, index) => (
+                            <SwiperSlide>
+                                <SwiperSlideContent
+                                    img={pic.pic1}
+                                />
+                            </SwiperSlide>
+                        ))
+                    }
+                />
+
+
+
+
+                    {/* <h4>Filter by Hair Category:</h4> */}
+                    {/* <div
                         className="d-flex justify-content-center mb-3 flex-wrap align-items-center"
                     >
                         <button
@@ -152,17 +280,17 @@ const Gallery = () => {
                         </button>
 
 
-                    </div>
-                    <div
+                    </div> */}
+                    {/* <div
                         id='swiperScroll'
                         className='flex-row d-flex justify-content-center align-items-center'
                     >
                         <img src='assets/img/svg/four-arrows.svg' alt='swipe arrows' style={{ width: '3em', margin: '1em' }} />
                         <h5 >Swipe Up, Down, Left, or Right to View Photos</h5>
-                    </div>
+                    </div> */}
 
 
-                    <Swiper
+                    {/* <Swiper
 
                         className="mySwiper swiper-v border rounded"
                         direction='vertical'
@@ -221,7 +349,7 @@ const Gallery = () => {
                             </SwiperSlide>
                         ))}
 
-                    </Swiper>
+                    </Swiper> */}
 
                 </section>
 

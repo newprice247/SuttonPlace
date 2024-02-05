@@ -1,32 +1,43 @@
 [
-    
     {
         "pic1": "assets/img/gallery/guyCuts/john1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/john2.jpg",
-        "pic3": "assets/img/gallery/guyCuts/john3.jpg",
-        "pic1alt": "John Picture 1",
-        "pic2alt": "John Picture 2",
-        "pic3alt": "John Picture 3"
+        "pic1alt": "John Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/john2.jpg",
+        "pic1alt": "John Picture 2"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/john3.jpg",
+        "pic1alt": "John Picture 3"
     },
     {
         "pic1": "assets/img/gallery/guyCuts/nathan1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/nathan2.jpg",
-        "pic3": "assets/img/gallery/guyCuts/nathan3.jpg",
-        "pic1alt": "Nathan Picture 1",
-        "pic2alt": "Nathan Picture 2",
-        "pic3alt": "Nathan Picture 3"
+        "pic1alt": "Nathan Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/nathan2.jpg",
+        "pic1alt": "Nathan Picture 2"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/nathan3.jpg",
+        "pic1alt": "Nathan Picture 3"
     },
     {
         "pic1": "assets/img/gallery/guyCuts/paul1.jpg",
-        "pic2": "assets/img/gallery/guyCuts/paul2.jpg",
-        "pic1alt": "Paul Picture 1",
-        "pic2alt": "Paul Picture 2"
+        "pic1alt": "Paul Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/paul2.jpg",
+        "pic1alt": "Paul Picture 2"
     },
     {
         "pic1": "assets/img/gallery/guyCuts/bob.jpg",
-        "pic2": "assets/img/gallery/guyCuts/bob2.jpg",
-        "pic1alt": "Bob Picture 1",
-        "pic2alt": "Bob Picture 2"
+        "pic1alt": "Bob Picture 1"
+    },
+    {
+        "pic1": "assets/img/gallery/guyCuts/bob2.jpg",
+        "pic1alt": "Bob Picture 2"
     },
     {
         "pic1": "assets/img/gallery/guyCuts/james1.jpg",

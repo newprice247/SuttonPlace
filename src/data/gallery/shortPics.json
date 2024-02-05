@@ -1,64 +1,86 @@
 [
     {
         "pic1": "assets/img/gallery/shortHair/ellenShort1.jpg",
-        "pic2": "assets/img/gallery/shortHair/ellenShort2.jpg",
-        "pic1alt": "Ellen's short hair",
-        "pic2alt": "Ellen's short hair"
+        "pic1alt": "Ellen's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/ellenShort2.jpg",
+        "pic1alt": "Ellen's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/gaborshort1.jpg",
-        "pic2": "assets/img/gallery/shortHair/gaborshort2.jpg",
-        "pic1alt": "Gabor's short hair",
-        "pic2alt": "Gabor's short hair"
+        "pic1alt": "Gabor's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/gaborshort2.jpg",
+        "pic1alt": "Gabor's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/jane1.jpg",
-        "pic2": "assets/img/gallery/shortHair/jane2.jpg",
-        "pic1alt": "Jane's short hair",
-        "pic2alt": "Jane's short hair"
+        "pic1alt": "Jane's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/jane2.jpg",
+        "pic1alt": "Jane's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/michelleShort1.jpg",
-        "pic2": "assets/img/gallery/shortHair/michelleShort2.jpg",
-        "pic1alt": "Michelle's short hair",
-        "pic2alt": "Michelle's short hair"
+        "pic1alt": "Michelle's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/michelleShort2.jpg",
+        "pic1alt": "Michelle's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/mitsy1.jpg",
-        "pic2": "assets/img/gallery/shortHair/mitsy2.jpg",
-        "pic1alt": "Mitsy's short hair",
-        "pic2alt": "Mitsy's short hair"
+        "pic1alt": "Mitsy's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/mitsy2.jpg",
+        "pic1alt": "Mitsy's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/pam1.jpg",
-        "pic2": "assets/img/gallery/shortHair/pam2.jpg",
-        "pic3" : "assets/img/gallery/shortHair/pam3.jpg",
-        "pic1alt": "Pam's short hair",
-        "pic2alt": "Pam's short hair",
-        "pic3alt": "Pam's short hair"
+        "pic1alt": "Pam's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/pam2.jpg",
+        "pic1alt": "Pam's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/pam3.jpg",
+        "pic1alt": "Pam's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/patShort1.jpg",
-        "pic2": "assets/img/gallery/shortHair/patShort2.jpg",
-        "pic1alt": "Pat's short hair",
-        "pic2alt": "Pat's short hair"
+        "pic1alt": "Pat's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/patShort2.jpg",
+        "pic1alt": "Pat's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/rita1.jpg",
-        "pic2": "assets/img/gallery/shortHair/rita2.jpg",
-        "pic1alt": "Rita's short hair",
-        "pic2alt": "Rita's short hair"
+        "pic1alt": "Rita's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/rita2.jpg",
+        "pic1alt": "Rita's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/susan1.jpg",
-        "pic2": "assets/img/gallery/shortHair/susan2.jpg",
-        "pic1alt": "Susan's short hair",
-        "pic2alt": "Susan's short hair"
+        "pic1alt": "Susan's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/susan2.jpg",
+        "pic1alt": "Susan's short hair"
     },
     {
         "pic1": "assets/img/gallery/shortHair/april1.jpg",
-        "pic2": "assets/img/gallery/shortHair/april2.jpg",
-        "pic1alt": "April's short hair",
-        "pic2alt": "April's short hair"
+        "pic1alt": "April's short hair"
+    },
+    {
+        "pic1": "assets/img/gallery/shortHair/april2.jpg",
+        "pic1alt": "April's short hair"
     }
 ]
