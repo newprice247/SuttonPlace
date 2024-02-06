@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
-// import { useState, useEffect } from 'react';
 import MetaTags from 'react-meta-tags';
-
-// import galleryPics from '../data/gallery/galleryPics';
 import menPics from '../data/gallery/menPics';
 import longPics from '../data/gallery/longPics';
 import midPics from '../data/gallery/midPics';
@@ -25,8 +22,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/effect-cards';
 
 import '../styles.css';
-// import { func } from 'prop-types';
-// const buttonArray = ['allHairButton', 'menHairButton', 'longHairButton', 'midHairButton', 'shortHairButton', 'smoothingButton'];
 
 function SwiperContent(props) {
     return (
@@ -35,11 +30,10 @@ function SwiperContent(props) {
         spaceBetween={0}
         navigation={{
             true: true,
-
         }}
         grabCursor={true}
         modules={[Navigation]}
-        className="mySwiper swiper-h spacer m-bottom-md"
+        className="mySwiper swiper-h spacer m-bottom-md rounded border shadow-lg"
         style={{
             width: '100%',
             height: '38rem',
@@ -61,52 +55,27 @@ function SwiperContent(props) {
     );
 }
 
-function SwiperSlideContent({ img }) {
+function SwiperSlideContent({ img, text }) {
     return (
         <div
-            className='h-100 w-100 d-flex align-items-center justify-content-center'
+            className='h-100 w-100 d-flex align-items-end justify-content-center text-white'
 
             style={{
                 backgroundImage: `url(${img})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
-                transition: 'filter 0.3s ease-in-out',
-            }}
-            onClick={(e) => {
-                e.target.style.filter = 'none';
-                e.target.style.transform = 'scale(1.05)';
-                e.target.style.transition = 'transform 0.3s ease-in-out';
-                
             }}
         >
+            <h4
+            className='p-5 w-100 text-center'
+            >{text}</h4>
         </div>
     );
 }
 
 
 const Gallery = () => {
-    // document.body.classList.add('page');
-    // const [activeButton, setActiveButton] = useState('allHairButton');
-
-    
-
-    // useEffect(() => {
-    //     buttonArray.forEach(button => {
-    //         if (button === activeButton) {
-    //             document.getElementById(button).classList.add('activeGalleryButton');
-    //         } else {
-    //             document.getElementById(button).classList.remove('activeGalleryButton');
-    //         }
-    //     }
-    //     );
-    // }, [activeButton]);
-
-    // useEffect(() => {
-    //     console.log(activeButton);
-    // }, [activeButton]);
-
-    // const [currentPicArray, setCurrentPicArray] = useState(galleryPics);
 
     return (
         <Fragment>
@@ -137,7 +106,7 @@ const Gallery = () => {
                 >
                     <h3
                     className='spacer m-top-lg'
-                    >Short Hair</h3>
+                    >-- Short Hair --</h3>
                     
                     <SwiperContent
                     children={
@@ -151,7 +120,7 @@ const Gallery = () => {
                         ))
                     }
                 />
-                    <h3>Mid-Length Hair</h3>
+                    <h3>-- Mid-Length Hair --</h3>
                     <SwiperContent
                     children={
                         midPics.map((pic, index) => (
@@ -164,7 +133,7 @@ const Gallery = () => {
                     }
                 />
 
-                    <h3>Long Hair</h3>
+                    <h3>-- Long Hair --</h3>
                     <SwiperContent
                     children={
                         longPics.map((pic, index) => (
@@ -177,19 +146,20 @@ const Gallery = () => {
                     }
                 />
                 
-                    <h3>Smoothing Treatments</h3>
+                    <h3>--Smoothing Treatments--</h3>
                     <SwiperContent
                     children={
                         smoothingPics.map((pic, index) => (
                             <SwiperSlide>
                                 <SwiperSlideContent
                                     img={pic.pic1}
+                                    text={pic.pic1alt}
                                 />
                             </SwiperSlide>
                         ))
                     }
                 />
-                    <h3>Men's Hair</h3>
+                    <h3>-- Men's Hair --</h3>
                     <SwiperContent
                     children={
                         menPics.map((pic, index) => (

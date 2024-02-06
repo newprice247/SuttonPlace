@@ -15,7 +15,7 @@ import { Navigation } from 'swiper/modules';
 function SwiperSlideContent({ img, title, href }) {
     return (
         <div
-            className='h-100 w-100 d-flex align-items-center justify-content-center'
+            className='h-100 w-100 d-flex align-items-center justify-content-center '
 
             style={{
                 backgroundImage: `url(${img})`,
@@ -33,14 +33,15 @@ function SwiperSlideContent({ img, title, href }) {
             }}
             onClick={(e) => {
                 e.target.style.filter = 'none';
-                e.target.style.transform = 'scale(1.05)';
+                e.target.style.transform = 'scale(1.09)';
                 e.target.style.transition = 'transform 0.3s ease-in-out';
                 setTimeout(() => {
                     window.location.href = `/${href}`;
                 }, 700);
             }}
         >
-            <p className='text-white text-center merriweather-light' style={{ fontSize: '3rem' }}>
+            <p className='text-white text-center merriweather-light'
+             style={{ fontSize: '3rem' }}>
                 {title}
             </p>
         </div>
