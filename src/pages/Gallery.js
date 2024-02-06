@@ -67,9 +67,9 @@ function SwiperSlideContent({ img, text }) {
                 backgroundRepeat: 'no-repeat',
             }}
         >
-            <h4
+            <h3
             className='p-5 w-100 text-center'
-            >{text}</h4>
+            >{text}</h3>
         </div>
     );
 }
