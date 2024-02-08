@@ -12,11 +12,27 @@
         "pic1alt": "Vikki"
     },
     {
+        "pic1": "assets/img/gallery/longHair/sueV1.jpg",
+        "pic1alt": "Sue V"
+    },
+    {
+        "pic1": "assets/img/gallery/longHair/sueV2.jpg",
+        "pic1alt": "Sue V"
+    },
+    {
         "pic1": "assets/img/gallery/longHair/kathyC1.jpg",
         "pic1alt": "Kathy C"
     },
     {
         "pic1": "assets/img/gallery/longHair/linda1.jpg",
         "pic1alt": "Linda"
+    },
+    {
+        "pic1": "assets/img/gallery/longHair/galeK.jpg",
+        "pic1alt": "Gale K"
+    },
+    {
+        "pic1": "assets/img/gallery/longHair/debbie.jpg",
+        "pic1alt": "Debbie"
     }
 ]
