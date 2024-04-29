@@ -45,7 +45,7 @@ const Home = () => {
 
                         <ServicesHome />
                         <div
-                            style={{ height: '70vh', width: '70%', margin: '5em auto' }}
+                            // style={{ height: '70vh', width: '70%', margin: '5em auto' }}
                         >
                             <GoogleMaps />
                         </div>
