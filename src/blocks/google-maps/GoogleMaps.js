@@ -5,9 +5,9 @@ const SimpleMarkerMap = () => {
 
   return (
     <div
-      // style={{ height: '70vh' }}
+      style={{ height: '70vh' }}
     >
-      {/* <div className=' mb-5 mt-5 justify-content-center align-items-center flex-row d-flex text-center'>
+      <div className=' mb-5 mt-5 justify-content-center align-items-center flex-row d-flex text-center'>
         <img src='assets/img/svg/location.svg' alt='location' style={{ width: '2em' }} className='mr-3' />
         <h2>Location</h2>
       </div>
@@ -17,7 +17,7 @@ const SimpleMarkerMap = () => {
         className='h-100 w-100 border rounded border-primary'
         loading="lazy"
         title="Locator Plus Map"
-      ></iframe> */}
+      ></iframe>
 
     </div>
 
