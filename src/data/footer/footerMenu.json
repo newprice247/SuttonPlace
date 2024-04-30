@@ -26,13 +26,13 @@
     {
         "id": "5",
         "title": "money",
-        "link": "https://www.money.com/",
+        "link": "https://razorpay.com/learn/what-is-cash-transaction/#:~:text=Cash%20transactions%20refer%20to%20the,Let's%20understand%20them%20in%20detail.",
         "icon": "assets/img/svg/money.svg"
     },
     {
         "id": "6",
         "title": "check",
-        "link": "https://www.check.com/",
+        "link": "https://www.investopedia.com/terms/c/check.asp#:~:text=A%20check%20is%20a%20written,is%20written%20is%20the%20payee.",
         "icon": "assets/img/svg/check.svg"
     }
 ]

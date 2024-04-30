@@ -8,7 +8,7 @@ const FooterMenu = () => {
                 { dataFooterMenu && dataFooterMenu.map( ( item, key ) => {
                     return (
                         <li key={ key } className="nav-item">
-                            <a title={ item.title } href={ item.link }>
+                            <a title={ item.title } href={ item.link } target="_blank">
                                 <img src={ item.icon } alt={ item.title } 
                                 style={ { width: '3em', height: '3em' } }
                                 />
