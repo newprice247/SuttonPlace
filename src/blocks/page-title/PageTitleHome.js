@@ -3,7 +3,7 @@ import React from 'react';
 
 const PageTitleHome = () => {
     return (
-        <section id="page-title" className="block with-img" style={ { backgroundImage: 'url(assets/img/bg/woodTools.jpg)' } }>
+        <section id="page-title" className="block with-img" style={ { backgroundImage: 'url(assets/img/bg/woodTools.webp)' } }>
             <div className="wrapper text-center d-flex">
                 <div className="align-self-center w-100">
                     <div className="title spacer m-bottom-lg">

@@ -8,7 +8,7 @@ const AboutImg = () => {
                 className='m-auto border border-dark rounded'
                 >
                     <div className="object-fit-cover">
-                        <img src="assets/img/gallery/suttonWorking.jpg" alt="About us" />
+                        <img src="assets/img/gallery/suttonWorking.webp" alt="About us" />
                     </div>
                 </div>
             </div>

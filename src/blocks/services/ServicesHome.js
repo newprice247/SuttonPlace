@@ -85,27 +85,27 @@ export default function App() {
             >
                 <SwiperSlide>
 
-                    <SwiperSlideContent img='assets/img/gallery/suttonWorking.jpg' title='About' href='about' />
+                    <SwiperSlideContent img='assets/img/gallery/suttonWorking.webp' title='About' href='about' />
 
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <SwiperSlideContent img='assets/img/bg/goldTools.jpg' title='Services' href='services' />
+                        <SwiperSlideContent img='assets/img/bg/goldTools.webp' title='Services' href='services' />
                     
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <SwiperSlideContent img='assets/img/bg/chair.jpg' title='Gallery' href='gallery' />
+                        <SwiperSlideContent img='assets/img/bg/chair.webp' title='Gallery' href='gallery' />
                
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <SwiperSlideContent img='assets/img/bg/phone.jpg' title='Contact' href='contacts' />
+                        <SwiperSlideContent img='assets/img/bg/phone.webp' title='Contact' href='contacts' />
                     
                 </SwiperSlide>
                 <SwiperSlide>
                     
-                        <SwiperSlideContent img='assets/img/bg/testimonials.jpg' title='Testimonials' href='testimonials' />
+                        <SwiperSlideContent img='assets/img/bg/testimonials.webp' title='Testimonials' href='testimonials' />
                     
                 </SwiperSlide>
             </Swiper >
